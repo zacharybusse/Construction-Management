@@ -1,0 +1,113 @@
+{
+  "_note": "Red Flags library — fully interactive (severity filter, search, recursive click-through decision tree with correct/incorrect paths highlighted). Seeded with 3 worked scenarios: one drawn directly from the research docs (flag-weather-delay) and two built from the same docs' 'common mistakes' research (flag-small-defect-spiral, flag-silent-problem). Add more toward the 15-20 goal by following the same decisionTree shape: each node is either a branch ({prompt, yes, no}) or a leaf ({action, consequence, nextStep, path: 'correct'|'incorrect'}).",
+  "flags": [
+    {
+      "id": "flag-weather-delay",
+      "title": "Unexpected Weather Threatens Tomorrow's Pour",
+      "severity": "red",
+      "scenario": "Concrete pour is scheduled for tomorrow; the forecast now shows rain moving in with about 48 hours' notice.",
+      "decisionTree": {
+        "prompt": "Has the Superintendent confirmed a weather contingency plan?",
+        "yes": {
+          "action": "Verify crew notification and confirm the backup date has been communicated to everyone affected.",
+          "consequence": "You're prepared if the weather hits — no surprises for the crew or the schedule.",
+          "nextStep": "Monitor weather updates and stay ready to execute the plan.",
+          "path": "correct"
+        },
+        "no": {
+          "prompt": "Do you escalate to the Superintendent immediately?",
+          "yes": {
+            "action": "Escalate to the Super immediately; discuss options — delay, cover, or proceed and test.",
+            "consequence": "Owner, architect, and trades can agree on a decision proactively, before the pour happens.",
+            "nextStep": "Await the decision and execute once confirmed.",
+            "path": "correct"
+          },
+          "no": {
+            "action": "You proceed without raising it, assuming it'll probably work out.",
+            "consequence": "The pour happens without a contingency in place. If rain hits mid-pour or right after, concrete quality is compromised and the crew wasn't set up with cover.",
+            "nextStep": "This is the mistake: it becomes $50K+ in testing and possible rework — all avoidable with a 5-minute conversation 48 hours earlier.",
+            "path": "incorrect"
+          }
+        }
+      },
+      "lesson": "Small weather decisions compound. Surface them 48+ hours early, not the morning of.",
+      "costOfMissing": "$50K+ in testing and potential rework if concrete quality is compromised.",
+      "prevention": "Daily 48-hour weather check-in with the Super — treat it as a non-negotiable task, not an afterthought.",
+      "realExample": "This exact failure mode — a known forecast that nobody formally addressed until it was too late — is one of the most common and most preventable causes of concrete quality disputes.",
+      "relatedVideos": [],
+      "relatedGlossary": ["concrete-pour", "qa-qc", "curing"]
+    },
+    {
+      "id": "flag-small-defect-spiral",
+      "title": "A Small Framing Deviation Looks Minor",
+      "severity": "yellow",
+      "scenario": "During a routine walk you notice wall framing is off-spec by about half an inch. It doesn't look urgent, and three other trades are waiting to build off that wall.",
+      "decisionTree": {
+        "prompt": "Could this deviation compound as other trades build off this wall (MEP, drywall, finishes)?",
+        "yes": {
+          "action": "Document with a photo and measurement, and notify the Super the same day — even though it looks minor.",
+          "consequence": "Caught before downstream trades build off a bad reference; costs almost nothing to fix now.",
+          "nextStep": "Re-inspect after correction before the next trade starts in that area.",
+          "path": "correct"
+        },
+        "no": {
+          "prompt": "Do you document it anyway, just to be safe?",
+          "yes": {
+            "action": "Log it as a low-priority punch item and move on.",
+            "consequence": "Reasonable — it's genuinely isolated and non-structural, and now there's a record either way.",
+            "nextStep": "Confirm it's closed out before the final walk.",
+            "path": "correct"
+          },
+          "no": {
+            "action": "You let it go unrecorded because it 'looked fine.'",
+            "consequence": "Weeks later it resurfaces during closeout with no documentation trail, and nobody remembers who was responsible for the fix or whether it was ever addressed.",
+            "nextStep": "This is the mistake: undocumented 'minor' issues become disputed issues.",
+            "path": "incorrect"
+          }
+        }
+      },
+      "lesson": "Small details compound quietly — the ones you don't document are the ones that come back to bite you.",
+      "costOfMissing": "Rework discovered at closeout costs far more, in dispute time and schedule, than the fix would have during the original walk.",
+      "prevention": "Document every deviation you notice, however small. A photo and a one-line note costs 30 seconds.",
+      "realExample": "This is one of the most common defect-tracking gaps regardless of project size — small deviations without documentation are a leading source of 'who approved this' disputes at closeout.",
+      "relatedVideos": ["kn-mental-frameworks-001"],
+      "relatedGlossary": ["punch-list", "spec-compliance", "nonconformance"]
+    },
+    {
+      "id": "flag-silent-problem",
+      "title": "You Spot a Coordination Conflict, But Aren't Sure It's Your Job to Raise It",
+      "severity": "red",
+      "scenario": "During a walk you notice electrical rough-in conflicts with an HVAC chase in one room. Nobody's mentioned it yet, and both trades are actively working.",
+      "decisionTree": {
+        "prompt": "Will this block or force rework for a trade if it isn't raised now?",
+        "yes": {
+          "action": "Raise it the same day: photo, location, both trades' foremen, and the Super — in writing.",
+          "consequence": "Both trades can resequence before more of either system gets installed in that space.",
+          "nextStep": "Confirm a resolution plan and re-check before either trade proceeds further in that room.",
+          "path": "correct"
+        },
+        "no": {
+          "prompt": "Are you sure, or just assuming someone else already saw it?",
+          "yes": {
+            "action": "Note it in your daily report for the record — no escalation needed.",
+            "consequence": "Appropriately scaled response for a genuinely non-blocking observation.",
+            "nextStep": "Keep monitoring as both trades progress.",
+            "path": "correct"
+          },
+          "no": {
+            "action": "You assume someone else will probably catch it and say nothing.",
+            "consequence": "Both trades keep installing in the same space. By the time it's obvious, ripping out and resequencing costs far more than a same-day flag would have.",
+            "nextStep": "This is the mistake: 'someone else probably saw it' is not a plan.",
+            "path": "incorrect"
+          }
+        }
+      },
+      "lesson": "If you're not sure whether someone else already flagged a conflict, that uncertainty itself is the signal to say something.",
+      "costOfMissing": "MEP rework after both systems are partially installed is one of the most expensive categories of rework on a job.",
+      "prevention": "Default to raising anything you notice in writing, even if you assume someone else probably already has — a duplicate flag costs nothing; a missed one costs weeks.",
+      "realExample": "Different trades genuinely do not talk to each other unless someone makes them — this pattern shows up on almost every MEP-intensive project at some point.",
+      "relatedVideos": ["kn-mental-frameworks-001"],
+      "relatedGlossary": ["mep-coordination", "rough-in", "rfi"]
+    }
+  ]
+}

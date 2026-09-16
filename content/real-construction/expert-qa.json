@@ -1,0 +1,41 @@
+{
+  "_note": "Expert Q&A — fully interactive (expand to compare answers side by side). Seeded with the one fully-worked example from the research docs. Add more toward the 10-15 goal as you collect common FE questions and synthesize expert answers.",
+  "questions": [
+    {
+      "id": "qa-escalate-criteria",
+      "question": "When should I escalate to the Superintendent versus handle it myself?",
+      "expertAnswers": [
+        {
+          "expert": "Kyle Nitchen",
+          "source": "The Influential Project Manager",
+          "answer": "Safety = always escalate. Cost or schedule impact = escalate. A technical quality judgment call = you decide."
+        },
+        {
+          "expert": "Elevate Constructionist",
+          "source": "elevateconstructionist.com",
+          "answer": "If you're unsure, ask. FEs aren't decision-makers — they're problem-surfacers."
+        },
+        {
+          "expert": "Field Engineer Handbook",
+          "source": "Construction management reference material",
+          "answer": "Rule of thumb: more than roughly $1K in impact, or more than a day of schedule impact, means escalate."
+        }
+      ],
+      "yourFramework": {
+        "rule1": "Safety issue? STOP → escalate immediately",
+        "rule2": "Schedule impact? Escalate, and bring 2-3 options with you",
+        "rule3": "Quality issue? Document and notify — let the Super decide rework timing",
+        "rule4": "Communication gap between trades? You fix it — that's your job"
+      },
+      "realExample": {
+        "situation": "Wall framing doesn't match spec — off by about half an inch.",
+        "yourAction": "Photo, measurements, and notification to the Super the same day.",
+        "superDecision": "Super assesses whether it's cosmetic (punch list) or critical (rework now).",
+        "yourExecute": "Execute whatever's decided, and document the resolution."
+      },
+      "difficulty": "intermediate",
+      "relatedRedFlags": ["flag-small-defect-spiral"],
+      "relatedGlossary": ["punch-list", "spec-compliance"]
+    }
+  ]
+}

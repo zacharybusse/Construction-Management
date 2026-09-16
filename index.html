@@ -22,6 +22,7 @@
         <a href="#week3" data-nav>Week 3</a>
         <a href="#week4" data-nav>Week 4</a>
         <a href="#glossary" data-nav>Glossary</a>
+        <a href="#real-construction" data-nav>Real Construction</a>
         <a href="#resources" data-nav>Resources</a>
         <button class="icon-btn" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
@@ -38,6 +39,7 @@
         <li data-week="week2"><span class="check-dot" aria-hidden="true"></span> Week 2: Deep Dive</li>
         <li data-week="week3"><span class="check-dot" aria-hidden="true"></span> Week 3: Interviews</li>
         <li data-week="week4"><span class="check-dot" aria-hidden="true"></span> Week 4: Final Prep</li>
+        <li data-week="real-construction"><span class="check-dot" aria-hidden="true"></span> Real Construction</li>
       </ul>
       <h3>Quick Links</h3>
       <div class="sidebar-links">
@@ -60,6 +62,7 @@
             <a href="#week2" data-nav>Week 2: Deep Dive</a>
             <a href="#week3" data-nav>Week 3: Interview Prep</a>
             <a href="#week4" data-nav>Week 4: Final Prep</a>
+            <a href="#real-construction" data-nav>Real Construction</a>
           </nav>
           <a href="#week1" class="btn" data-nav>Start Week 1 →</a>
           <div class="home-progress">
@@ -90,6 +93,11 @@
             <span class="week-num">Week 4</span>
             <h3>Final Prep &amp; Polish</h3>
             <p>Mock interview simulator, a printable checklist, and a one-page quick reference.</p>
+          </a>
+          <a class="week-card" href="#real-construction" data-nav>
+            <span class="week-num">Bonus</span>
+            <h3>Real Construction</h3>
+            <p>Videos, daily habits, red flags, and case studies from real PMs and field engineers.</p>
           </a>
         </div>
       </section>
@@ -208,6 +216,49 @@
         </div>
       </section>
 
+      <!-- ================= REAL CONSTRUCTION ================= -->
+      <section id="real-construction" class="page">
+        <span class="week-badge">Learn From The Field</span>
+        <h2>Real Construction</h2>
+        <p class="intro-blurb">Learn from seasoned PMs and field engineers — curated videos, daily habits, real red-flag scenarios, and case studies from actual projects, beyond what's in a textbook.</p>
+
+        <div class="subsection">
+          <h3>Your Progress</h3>
+          <div id="rcDashboard"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>Video Library</h3>
+          <div class="placeholder-note">Seeded with the two sourced videos/articles from the research docs. Add more as you curate them — see <code>content/real-construction/videos.json</code>.</div>
+          <div id="rcVideoLibrary"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>Daily Habit Tracker</h3>
+          <p style="color:var(--color-text-muted);">Check off habits as you practice them. Resets each day; your streaks and weekly score are saved in this browser.</p>
+          <div id="rcHabitTracker"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>Red Flags Library</h3>
+          <p style="color:var(--color-text-muted);">Click a scenario, then click through the decision tree — the correct path is highlighted in green, wrong turns show you the real consequence.</p>
+          <div class="placeholder-note">Seeded with 3 fully-worked scenarios. Add more toward 15-20 in <code>content/real-construction/red-flags.json</code>.</div>
+          <div id="rcRedFlags"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>Case Study Breakdowns</h3>
+          <div class="placeholder-note">Seeded with 1 fully-worked case study. Add more toward 8-12 in <code>content/real-construction/case-studies.json</code>.</div>
+          <div id="rcCaseStudies"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>Expert Q&amp;A</h3>
+          <div class="placeholder-note">Seeded with 1 fully-worked Q&amp;A. Add more toward 10-15 in <code>content/real-construction/expert-qa.json</code>.</div>
+          <div id="rcExpertQA"></div>
+        </div>
+      </section>
+
       <!-- ================= GLOSSARY ================= -->
       <section id="glossary" class="page">
         <h2>Full Glossary</h2>
@@ -270,7 +321,7 @@
             <li>Toggle dark mode with the 🌙 button in the header — useful for outdoor readability.</li>
           </ul>
           <h3>Adding New Content</h3>
-          <p>Weeks 2-4 ship with working components and sample data. To expand them, edit the corresponding JSON files in <code>content/week2</code>, <code>content/week3</code>, and <code>content/week4</code> — no code changes required. See the <a href="README.md">README</a> in the repository root for the full data schema.</p>
+          <p>Weeks 2-4 and the Real Construction section ship with working components and sample data. To expand them, edit the corresponding JSON files in <code>content/week2</code>, <code>content/week3</code>, <code>content/week4</code>, and <code>content/real-construction</code> — no code changes required. See the <a href="README.md">README</a> in the repository root for the full data schema.</p>
         </div>
       </section>
 
@@ -283,6 +334,7 @@
 
   <script src="js/glossary.js"></script>
   <script src="js/scenarios.js"></script>
+  <script src="js/real-construction.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

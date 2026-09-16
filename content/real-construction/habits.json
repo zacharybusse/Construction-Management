@@ -1,0 +1,75 @@
+{
+  "dailyHabits": [
+    {
+      "id": "habit-wear-bags",
+      "habit": "Wear Your Bags",
+      "description": "Keep essential tools accessible: tape measure, level, clipboard, camera, notepad.",
+      "whyMatters": "Prepared FEs solve problems immediately; unprepared ones have to walk back for a tool and delay the fix.",
+      "example": "Problem found during a walk → immediately measure, photograph, and note it → resolved in the same visit instead of a second trip.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "easy",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#388E3C"
+    },
+    {
+      "id": "habit-figure-it-out",
+      "habit": "Figure Things Out",
+      "description": "Work through a problem yourself before escalating — but ask real questions along the way instead of guessing.",
+      "whyMatters": "FEs are problem-solvers, not problem-escalators. Constantly deferring to the Super for every decision slows the whole team down and stunts your own growth.",
+      "example": "Layout looks off by a fraction of an inch — re-measure from two reference points and check the drawing revision before assuming it's wrong and escalating.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "medium",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#F57C00"
+    },
+    {
+      "id": "habit-respect-craft",
+      "habit": "Respect the Craft",
+      "description": "Work shoulder-to-shoulder with trades; understand their constraints instead of just inspecting from a distance.",
+      "whyMatters": "Workers notice — and respond to — genuine respect. An FE who's dismissive of the trades gets slower cooperation and less honest information.",
+      "example": "Ask a foreman why a sequence is done a certain way before flagging it as wrong; often there's a constraint you don't see from the drawings alone.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "easy",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#388E3C"
+    },
+    {
+      "id": "habit-double-check",
+      "habit": "Double-Check Differently",
+      "description": "Verify work using a different person or a different method than the original check.",
+      "whyMatters": "The same person using the same method tends to repeat the same mistakes. Fresh eyes — or a different tool — catch errors the original check missed.",
+      "example": "Laid out with a total station → verify with a tape measure. Have someone else spot-check if possible.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "easy",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#388E3C"
+    },
+    {
+      "id": "habit-field-book",
+      "habit": "Keep a Field Book",
+      "description": "Carry a pocket notebook recording daily details: weather, people on site, decisions made, measurements taken.",
+      "whyMatters": "Memory is unreliable, especially months later in a dispute. A contemporaneous, handwritten record is treated as strong evidence.",
+      "example": "Daily entry: weather conditions, crew names present, what was accomplished, and any decisions made and by whom.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "easy",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#F57C00"
+    },
+    {
+      "id": "habit-communicate",
+      "habit": "Communicate Constantly",
+      "description": "Surface issues early instead of waiting for them to compound — don't let a small problem sit hidden for days.",
+      "whyMatters": "Most Field Engineer failures trace back to a hidden problem that was known but not communicated until it was expensive.",
+      "example": "Noticed a minor spec deviation on Monday — flag it in the daily report and to the foreman that same day, not at Friday's punch walk.",
+      "source": "Elevate Constructionist — Field Engineer Habits",
+      "difficulty": "medium",
+      "relatedVideos": ["ec-fe-habits-001"],
+      "color": "#F57C00"
+    }
+  ],
+  "weeklyGoal": "Practice all 6 habits at least 5 out of 7 days",
+  "scoringLogic": {
+    "dailyMax": 6,
+    "weeklyTarget": 30
+  }
+}

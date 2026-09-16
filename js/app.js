@@ -3,8 +3,8 @@
    data loading, and wiring for all interactive sections.
    ========================================================================== */
 
-const NAV_PAGES = ["home", "week1", "week2", "week3", "week4", "glossary", "resources", "about"];
-const TRACKED_WEEKS = ["week1", "week2", "week3", "week4"];
+const NAV_PAGES = ["home", "week1", "week2", "week3", "week4", "real-construction", "glossary", "resources", "about"];
+const TRACKED_WEEKS = ["week1", "week2", "week3", "week4", "real-construction"];
 const PROGRESS_KEY = "fe-learning-progress-v1";
 const THEME_KEY = "fe-learning-theme";
 const CHECKLIST_KEY = "fe-checklist-v1";
@@ -42,6 +42,11 @@ async function loadAllData() {
     mockInterview,
     resumeTips,
     closingChecklist,
+    rcVideos,
+    rcHabits,
+    rcRedFlags,
+    rcCaseStudies,
+    rcExpertQA,
   ] = await Promise.all([
     fetchJSON("content/week1/hierarchy.json"),
     fetchJSON("content/week1/terminology.json"),
@@ -56,6 +61,11 @@ async function loadAllData() {
     fetchJSON("content/week4/mock-interview.json"),
     fetchJSON("content/week4/resume-tips.json"),
     fetchJSON("content/week4/closing-checklist.json"),
+    fetchJSON("content/real-construction/videos.json"),
+    fetchJSON("content/real-construction/habits.json"),
+    fetchJSON("content/real-construction/red-flags.json"),
+    fetchJSON("content/real-construction/case-studies.json"),
+    fetchJSON("content/real-construction/expert-qa.json"),
   ]);
 
   return {
@@ -63,6 +73,7 @@ async function loadAllData() {
     week2: { feResponsibilities, decisionTrees, commonScenarios },
     week3: { interviewQuestions, talkingPoints, jeDunnCulture },
     week4: { mockInterview, resumeTips, closingChecklist },
+    realConstruction: { rcVideos, rcHabits, rcRedFlags, rcCaseStudies, rcExpertQA },
   };
 }
 
@@ -745,4 +756,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   if (data.week4.closingChecklist) renderChecklist(data.week4.closingChecklist);
   if (data.week1.terminology && data.week1.hierarchy) renderQuickRef(data.week1.terminology, data.week1.hierarchy);
+
+  // Real Construction
+  const rc = data.realConstruction;
+  if (rc.rcVideos) VideoLibrary.mount(qs("rcVideoLibrary"), rc.rcVideos.videos);
+  if (rc.rcHabits) HabitTracker.mount(qs("rcHabitTracker"), rc.rcHabits);
+  if (rc.rcRedFlags) RedFlagsLibrary.mount(qs("rcRedFlags"), rc.rcRedFlags.flags);
+  if (rc.rcCaseStudies) CaseStudies.mount(qs("rcCaseStudies"), rc.rcCaseStudies.studies);
+  if (rc.rcExpertQA) ExpertQA.mount(qs("rcExpertQA"), rc.rcExpertQA.questions);
+  if (rc.rcVideos && rc.rcHabits && rc.rcRedFlags && rc.rcCaseStudies) {
+    RCDashboard.mount(qs("rcDashboard"), {
+      videoTotal: rc.rcVideos.videos.length,
+      flagTotal: rc.rcRedFlags.flags.length,
+      caseTotal: rc.rcCaseStudies.studies.length,
+    });
+  }
 });

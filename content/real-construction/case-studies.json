@@ -1,0 +1,40 @@
+{
+  "_note": "Case Studies — fully interactive (expand for full breakdown). Seeded with the one fully-worked example from the research docs. Add more toward the 8-12 goal following this shape as you find or document real project failures.",
+  "studies": [
+    {
+      "id": "case-mep-coordination",
+      "title": "Data Center MEP Coordination Failure",
+      "industry": "Hyperscale data center",
+      "projectSize": "$50M+",
+      "problem": "Electrical rough-in conflicted with HVAC chase locations; uncoordinated rework was required after both systems were partially installed.",
+      "cost": "$200K+ in rework, plus a 3-week schedule delay",
+      "whatWentWrong": [
+        "Pre-construction coordination was limited; conflicts weren't identified early",
+        "No site walk-through with trades happened before rough-in began",
+        "Field Engineer inspections were reactive, not proactive",
+        "Escalation happened after the conflict was already built, not before"
+      ],
+      "whatShouldHappenInstead": [
+        "Pre-construction: walk the drawings with all affected trades and mark conflicts before anyone mobilizes",
+        "Before rough-in: hold an on-site coordination meeting and physically mark locations",
+        "During rough-in: FE verifies actual placement against the coordinated plan daily",
+        "Escalation: any deviation gets a photo and Super notification the same day it's found"
+      ],
+      "tacitKnowledge": [
+        "Coordination happens on-site, not just at meetings",
+        "Prevention is dramatically cheaper than correction",
+        "Be the translator between trades — they don't talk to each other unless you make them",
+        "Daily walk-throughs catch problems before they turn into rework"
+      ],
+      "yourFramework": {
+        "step1": "Become the central translator between trades",
+        "step2": "Proactive coordination is roughly 80% of the FE job",
+        "step3": "Document conflicts early — solutions are cheaper the earlier they're caught"
+      },
+      "difficulty": "intermediate",
+      "relatedGlossary": ["mep", "rough-in", "mep-coordination", "change-order"],
+      "relatedRedFlags": ["flag-silent-problem"],
+      "relatedVideos": ["kn-mental-frameworks-001"]
+    }
+  ]
+}

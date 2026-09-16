@@ -37,8 +37,9 @@ This repo includes `.github/workflows/deploy-pages.yml`, which builds and deploy
 | **Week 2 — FE Deep Dive** | 🟡 Structure ready, sample data | Responsibilities matrix, interactive decision trees, scenario problem-solver |
 | **Week 3 — Interview Prep** | 🟡 Structure ready, sample data | Interview question bank, talking points, JE Dunn culture |
 | **Week 4 — Final Prep** | 🟡 Structure ready, sample data | Mock interview simulator, printable checklist, one-page quick reference |
+| **Real Construction** | 🟡 Structure ready, sample data | Video library, daily habit tracker, red flags library (interactive decision trees), case studies, expert Q&A |
 
-Weeks 2-4 ship with fully working, interactive components — they're just seeded with a handful of examples instead of the full content set. Add more by editing JSON, no code changes required (see below).
+Weeks 2-4 and Real Construction ship with fully working, interactive components — they're just seeded with a handful of examples instead of the full content set. Add more by editing JSON, no code changes required (see below).
 
 ## Repo Structure
 
@@ -56,21 +57,23 @@ field-engineer-learning/
 ├── js/
 │   ├── app.js                # Routing, theming, progress tracking, data loading, most section rendering
 │   ├── scenarios.js          # Decision tree navigator, scenario problem-solver, mock interview simulator
-│   └── glossary.js           # Reusable searchable/filterable glossary component
+│   ├── glossary.js           # Reusable searchable/filterable glossary component
+│   └── real-construction.js  # Video library, habit tracker, red flags tree, case studies, expert Q&A
 ├── content/
 │   ├── week1/                # Complete: hierarchy, terminology, army-to-construction, meta-context
 │   ├── week2/                # Sample data: fe-responsibilities, decision-trees, common-scenarios
 │   ├── week3/                # Sample data: interview-questions, talking-points, je-dunn-culture
-│   └── week4/                # Sample data: mock-interview, resume-tips, closing-checklist
+│   ├── week4/                # Sample data: mock-interview, resume-tips, closing-checklist
+│   └── real-construction/    # Sample data: videos, habits, red-flags, case-studies, expert-qa
 ├── images/                   # hierarchy-chart.svg, daily-schedule.svg, decision-tree.svg, meta-project-map.svg
 └── docs/                     # GLOSSARY.md, ARMY_TRANSLATION.md, INTERVIEW_GUIDE.md, QUICK_REFERENCE.md
 ```
 
-## Adding Content to Weeks 2-4
+## Adding Content to Weeks 2-4 and Real Construction
 
 Every section on the site is rendered from a JSON file — there's no content hardcoded in the HTML for these sections. To add more:
 
-1. Open the relevant file in `content/weekN/`.
+1. Open the relevant file in `content/weekN/` or `content/real-construction/`.
 2. Follow the existing shape (look at the `_note` field and the first entry as a template).
 3. Add new objects to the array (`terms`, `scenarios`, `questions`, `responsibilities`, etc.).
 4. Save and refresh — no rebuild step needed.

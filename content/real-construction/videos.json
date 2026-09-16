@@ -1,0 +1,37 @@
+{
+  "_note": "Real Construction video library — structure and interactivity are fully built out (search, category/difficulty filters, expand-to-detail, favorites, view tracking). Seeded with the two sources named in the research docs that came with a real URL attached. Add more as you curate them: paste the URL, fill in the fields below, and it shows up automatically — no code changes needed. Do not invent thumbnail images or video IDs for entries you haven't actually verified; leave 'thumbnailUrl' out and the card falls back to a plain initials tile.",
+  "videos": [
+    {
+      "id": "ec-fe-habits-001",
+      "creator": "Elevate Constructionist",
+      "title": "Field Engineer Habits: Daily Practices That Prevent Rework",
+      "url": "https://elevateconstructionist.com/field-engineer-habits-in-construction-daily-practices-that-prevent-rework/",
+      "platform": "Elevate Constructionist",
+      "duration": null,
+      "thumbnailUrl": null,
+      "category": ["habits", "best-practices", "quality"],
+      "difficulty": "beginner",
+      "keyTakeaway": "FEs who wear their bags, double-check differently, keep field books, and communicate constantly prevent rework.",
+      "whyMatters": "These habits are foundational — experienced FEs practice them daily, and they're the fastest way to look competent on day one.",
+      "relatedGlossary": ["punch-list", "daily-report", "qa-qc"],
+      "relatedRedFlags": [],
+      "reflectionPrompt": "Which of these habits will you practice first, and why?"
+    },
+    {
+      "id": "kn-mental-frameworks-001",
+      "creator": "Kyle Nitchen",
+      "title": "Four Mental Frameworks Experienced PMs Use on Site",
+      "url": "https://kylenitchen.substack.com",
+      "platform": "Substack",
+      "duration": null,
+      "thumbnailUrl": null,
+      "category": ["leadership", "best-practices"],
+      "difficulty": "intermediate",
+      "keyTakeaway": "Right to Build, Constructability Review, Zone Control, and Punch-as-You-Go are four decision frameworks that prevent rework and schedule slippage before they happen.",
+      "whyMatters": "Field Engineers who think in these frameworks catch problems earlier than ones who just react to what's in front of them.",
+      "relatedGlossary": ["punch-list", "critical-path", "mep-coordination"],
+      "relatedRedFlags": ["flag-small-defect-spiral"],
+      "reflectionPrompt": "Which of the four frameworks (Right to Build, Constructability, Zone Control, Punch-as-You-Go) is most relevant to your next inspection?"
+    }
+  ]
+}
