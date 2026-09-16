@@ -2,7 +2,7 @@
 
 A self-paced, interactive learning site for transitioning from Army operations leadership into a **Field Engineer** role in commercial construction — built around a 4-week program and specific prep for interviewing at JE Dunn Construction on the Meta El Paso data center project.
 
-It's a fully static site (HTML/CSS/vanilla JS, no build step, no frameworks) that works offline and deploys to GitHub Pages in one step.
+It's a fully static site (HTML/CSS/vanilla JS, no build step, no frameworks) that works offline and deploys to GitHub Pages automatically via GitHub Actions on every push to `main`.
 
 ## Quick Start
 
@@ -22,11 +22,12 @@ Then open **http://localhost:8000** in your browser.
 
 ## Deploying to GitHub Pages
 
-1. Push this repository to GitHub.
-2. In the repo, go to **Settings → Pages**.
-3. Under "Build and deployment," set **Source** to `Deploy from a branch`, branch `main`, folder `/ (root)`.
-4. Save. Your site will be live at `https://<your-username>.github.io/<repo-name>/` within a minute or two.
-5. Every push to `main` redeploys automatically.
+This repo includes `.github/workflows/deploy-pages.yml`, which builds and deploys the site to GitHub Pages automatically on every push to `main`. GitHub Pages itself needs to be pointed at that workflow once (this one click can't be done via API/token — it requires repo admin access in the browser):
+
+1. Go to **Settings → Pages** in the repo.
+2. Under "Build and deployment," set **Source** to **`GitHub Actions`** (not "Deploy from a branch").
+3. Save. The next push to `main` (or a manual re-run of the "Deploy to GitHub Pages" workflow under the **Actions** tab) will publish the site.
+4. Your site will be live at `https://<your-username>.github.io/<repo-name>/` within a minute or two, and stays up to date automatically on every future push to `main`.
 
 ## What's Here
 
@@ -47,6 +48,8 @@ field-engineer-learning/
 ├── .gitignore
 ├── index.html                # Single-page app shell — all routing happens client-side via URL hash
 ├── package.json
+├── .github/workflows/
+│   └── deploy-pages.yml      # Builds and deploys to GitHub Pages on every push to main
 ├── css/
 │   ├── styles.css            # Core styles, components, color scheme, print styles
 │   └── responsive.css        # Mobile/tablet breakpoints
