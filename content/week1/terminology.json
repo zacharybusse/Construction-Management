@@ -1,0 +1,300 @@
+{
+  "terms": [
+    {
+      "id": "rebar",
+      "category": "structural",
+      "term": "Rebar",
+      "definition": "Reinforcing steel bars embedded in concrete to provide tensile strength.",
+      "whyItMatters": "You verify spacing, cover (distance from surface), and tie placement to ensure structural integrity before the pour.",
+      "armyAnalog": "Like ammunition supply verification — correct quantities, correct placement, correct documentation before the mission starts.",
+      "relatedTerms": ["concrete-pour", "formwork"],
+      "commonMistakes": ["Missing the pre-pour inspection", "Not measuring cover distance", "Assuming placement is correct without checking the drawings"]
+    },
+    {
+      "id": "concrete-pour",
+      "category": "structural",
+      "term": "Concrete Pour",
+      "definition": "The process of placing liquid concrete into formwork to cure into a structural element.",
+      "whyItMatters": "A critical inspection point — affects structural integrity, schedule, and budget if it goes wrong.",
+      "armyAnalog": "Like a live-fire exercise — once it starts, there's no undo. Everything has to be verified beforehand.",
+      "relatedTerms": ["rebar", "formwork", "curing"],
+      "commonMistakes": ["Not checking ambient temperature", "Missing the early-age inspection", "Starting finishes before proper cure time"]
+    },
+    {
+      "id": "formwork",
+      "category": "structural",
+      "term": "Formwork",
+      "definition": "Temporary molds used to shape and hold concrete in place until it cures.",
+      "whyItMatters": "You verify dimensions, plumb, and bracing before the pour — errors here are locked into the structure permanently.",
+      "armyAnalog": "Like a range safety fan — the boundaries have to be exactly right before anything happens inside them.",
+      "relatedTerms": ["rebar", "concrete-pour"],
+      "commonMistakes": ["Not checking plumb/level", "Insufficient bracing", "Wrong dimensions vs. drawings"]
+    },
+    {
+      "id": "structural-steel",
+      "category": "structural",
+      "term": "Structural Steel",
+      "definition": "Steel beams, columns, and connections that form a building's structural skeleton.",
+      "whyItMatters": "You verify bolt torque, weld quality, and plumb/alignment against structural drawings.",
+      "armyAnalog": "Like verifying a bridge classification before crossing — the load path has to be exactly what the engineer specified.",
+      "relatedTerms": ["plumb-and-level", "punch-list"],
+      "commonMistakes": ["Skipping bolt torque verification", "Not checking weld inspection reports"]
+    },
+    {
+      "id": "plumb-and-level",
+      "category": "structural",
+      "term": "Plumb and Level",
+      "definition": "Plumb means perfectly vertical; level means perfectly horizontal. Both are checked with lasers or levels.",
+      "whyItMatters": "Out-of-tolerance elements compound as construction progresses — a small error on floor 1 becomes a big one by floor 10.",
+      "armyAnalog": "Like a zeroed weapon sight — small errors at the point of origin become large errors downrange.",
+      "relatedTerms": ["structural-steel", "formwork"]
+    },
+    {
+      "id": "footing",
+      "category": "structural",
+      "term": "Footing",
+      "definition": "The base structural element that transfers building loads into the soil.",
+      "whyItMatters": "Footing depth, width, and rebar placement are foundational — literally. Errors here affect everything built above.",
+      "armyAnalog": "Like establishing a secure base of operations — everything else depends on this being right.",
+      "relatedTerms": ["rebar", "concrete-pour"]
+    },
+    {
+      "id": "rfi",
+      "category": "documentation",
+      "term": "RFI (Request for Information)",
+      "definition": "A formal question submitted to the design team when drawings are unclear, conflicting, or missing information.",
+      "whyItMatters": "RFIs create a documented paper trail and prevent field guessing on design intent — guessing wrong can mean expensive rework.",
+      "armyAnalog": "Like a request for clarification up the chain of command before executing an ambiguous order.",
+      "relatedTerms": ["submittal", "change-order"],
+      "commonMistakes": ["Not RFI-ing an ambiguity and guessing instead", "Vague RFI language that generates a vague answer"]
+    },
+    {
+      "id": "submittal",
+      "category": "documentation",
+      "term": "Submittal",
+      "definition": "Documentation (product data, shop drawings, samples) a subcontractor submits for architect/engineer approval before fabrication or installation.",
+      "whyItMatters": "You track submittal status to make sure trades aren't installing unapproved materials — which can force teardown and re-installation.",
+      "armyAnalog": "Like getting a plan approved before execution — you don't move out until higher headquarters signs off.",
+      "relatedTerms": ["rfi", "punch-list"]
+    },
+    {
+      "id": "change-order",
+      "category": "documentation",
+      "term": "Change Order",
+      "definition": "A formal, agreed-upon modification to the contract scope, cost, or schedule.",
+      "whyItMatters": "You document field conditions that drive change orders — accurate records protect the project's budget and schedule.",
+      "armyAnalog": "Like a fragmentary order (FRAGO) that modifies the original operations order mid-mission.",
+      "relatedTerms": ["rfi", "punch-list"]
+    },
+    {
+      "id": "punch-list",
+      "category": "documentation",
+      "term": "Punch List",
+      "definition": "A list of incomplete or defective items that must be corrected before a phase or project is accepted as complete.",
+      "whyItMatters": "You generate and track punch items daily — the goal is to \"punch as you go\" instead of a massive list at the end.",
+      "armyAnalog": "Like an after-action review (AAR) findings list — specific, assigned, and tracked to closure.",
+      "relatedTerms": ["submittal", "rfi"],
+      "commonMistakes": ["Letting punch items pile up instead of correcting as you go", "Vague punch descriptions with no location or owner"]
+    },
+    {
+      "id": "daily-report",
+      "category": "documentation",
+      "term": "Daily Report",
+      "definition": "A formal daily record of site activity: weather, manpower, work performed, deliveries, and issues.",
+      "whyItMatters": "Daily reports are the project's legal and historical record — they're used to resolve disputes and delay claims months later.",
+      "armyAnalog": "Like a daily situation report (SITREP) — factual, timestamped, and used for both current awareness and future record.",
+      "relatedTerms": ["punch-list", "rfi"]
+    },
+    {
+      "id": "mep",
+      "category": "mep",
+      "term": "MEP",
+      "definition": "Mechanical, Electrical, and Plumbing — the three primary building systems trades.",
+      "whyItMatters": "MEP coordination is one of the most common sources of conflict and rework on a job site — systems have to physically fit in the same space.",
+      "armyAnalog": "Like coordinating fires, maneuver, and logistics — three different systems that all have to occupy the same space and time without colliding.",
+      "relatedTerms": ["rough-in", "mep-coordination"]
+    },
+    {
+      "id": "rough-in",
+      "category": "mep",
+      "term": "Rough-In",
+      "definition": "The stage where MEP systems (pipes, conduit, ductwork) are installed inside walls/ceilings before they're closed up.",
+      "whyItMatters": "This is your last chance to inspect before the work is hidden behind drywall or ceiling tile — mistakes found later mean demolition.",
+      "armyAnalog": "Like a pre-combat inspection — the last check before everything is committed and can't be easily undone.",
+      "relatedTerms": ["mep", "mep-coordination"],
+      "commonMistakes": ["Approving rough-in before all trades have completed their portion", "Missing a pressure/leak test"]
+    },
+    {
+      "id": "mep-coordination",
+      "category": "mep",
+      "term": "MEP Coordination",
+      "definition": "The process of resolving physical clashes between mechanical, electrical, and plumbing systems before installation, often using 3D BIM models.",
+      "whyItMatters": "Uncoordinated MEP causes field clashes — expensive, schedule-killing rework when two systems try to occupy the same space.",
+      "armyAnalog": "Like deconflicting airspace and ground maneuver — done in planning so it never becomes a problem in execution.",
+      "relatedTerms": ["mep", "rough-in"]
+    },
+    {
+      "id": "hvac",
+      "category": "mep",
+      "term": "HVAC",
+      "definition": "Heating, Ventilation, and Air Conditioning — the mechanical systems that control a building's climate.",
+      "whyItMatters": "On a data center, HVAC (cooling specifically) is mission-critical infrastructure, not just comfort — servers fail without it.",
+      "armyAnalog": "Like environmental control on a deployed command post — critical infrastructure, not a comfort item.",
+      "relatedTerms": ["mep"]
+    },
+    {
+      "id": "switchgear",
+      "category": "mep",
+      "term": "Switchgear",
+      "definition": "Electrical equipment used to control, protect, and isolate electrical equipment (breakers, switches, fuses).",
+      "whyItMatters": "Data centers are power-dense; switchgear installation tolerances and testing are heavily scrutinized.",
+      "armyAnalog": "Like a power distribution point at a forward operating base — critical, high-consequence infrastructure.",
+      "relatedTerms": ["mep"]
+    },
+    {
+      "id": "critical-path",
+      "category": "scheduling",
+      "term": "Critical Path",
+      "definition": "The sequence of dependent tasks that determines the shortest possible project duration — any delay here delays the whole project.",
+      "whyItMatters": "You need to know which tasks are on the critical path so you can flag delays immediately instead of after the fact.",
+      "armyAnalog": "Like the decisive point in an operation — the one thing that, if delayed, delays everything downstream.",
+      "relatedTerms": ["look-ahead-schedule", "milestone"]
+    },
+    {
+      "id": "look-ahead-schedule",
+      "category": "scheduling",
+      "term": "Look-Ahead Schedule",
+      "definition": "A short-term (typically 2-3 week) detailed schedule that breaks the master schedule into actionable near-term tasks.",
+      "whyItMatters": "This is the schedule you actually work from day to day — it's where trade sequencing conflicts get caught early.",
+      "armyAnalog": "Like a weekly training or operations schedule that translates a broader campaign plan into executable near-term tasks.",
+      "relatedTerms": ["critical-path", "milestone"]
+    },
+    {
+      "id": "milestone",
+      "category": "scheduling",
+      "term": "Milestone",
+      "definition": "A significant, fixed point in the schedule marking the completion of a major phase (e.g., \"structure topped out\").",
+      "whyItMatters": "Milestones are what the Owner and PM track most closely — you help ensure the underlying work supports hitting them.",
+      "armyAnalog": "Like a phase line or objective in an operations order — a fixed marker of progress everyone tracks against.",
+      "relatedTerms": ["critical-path", "look-ahead-schedule"]
+    },
+    {
+      "id": "float",
+      "category": "scheduling",
+      "term": "Float",
+      "definition": "The amount of time a task can be delayed without impacting the overall project schedule.",
+      "whyItMatters": "Understanding which tasks have float (and which don't) tells you what's safe to flex and what needs immediate escalation.",
+      "armyAnalog": "Like slack time built into a movement plan — useful, but it runs out fast once consumed.",
+      "relatedTerms": ["critical-path"]
+    },
+    {
+      "id": "mobilization",
+      "category": "scheduling",
+      "term": "Mobilization",
+      "definition": "The setup phase where a contractor establishes site infrastructure (trailers, fencing, utilities) before construction begins.",
+      "whyItMatters": "A clean mobilization sets the tone for the whole project — site logistics planned poorly here cause friction for months.",
+      "armyAnalog": "Like establishing a forward operating base — the setup determines how smoothly everything after it runs.",
+      "relatedTerms": ["look-ahead-schedule"]
+    },
+    {
+      "id": "qa-qc",
+      "category": "quality",
+      "term": "QA/QC",
+      "definition": "Quality Assurance / Quality Control — the processes that verify work meets specifications before and after installation.",
+      "whyItMatters": "This is a core part of the FE role — you are the field's frontline QA/QC check.",
+      "armyAnalog": "Like a standards inspection — verifying execution matches the published standard, every time, not just when someone's watching.",
+      "relatedTerms": ["punch-list", "inspection-checklist"]
+    },
+    {
+      "id": "inspection-checklist",
+      "category": "quality",
+      "term": "Inspection Checklist",
+      "definition": "A standardized checklist used to verify specific installation criteria before work is covered or moves to the next phase.",
+      "whyItMatters": "Checklists ensure consistency — you're not relying on memory to catch every required check across dozens of similar inspections.",
+      "armyAnalog": "Like a pre-combat inspection (PCI) checklist — the same standard applied every single time, no shortcuts.",
+      "relatedTerms": ["qa-qc"]
+    },
+    {
+      "id": "spec-compliance",
+      "category": "quality",
+      "term": "Spec Compliance",
+      "definition": "Verifying installed work matches the project specifications (materials, methods, tolerances) laid out in the contract documents.",
+      "whyItMatters": "Spec is the legal standard the work is measured against — \"looks fine\" isn't the same as \"meets spec.\"",
+      "armyAnalog": "Like verifying equipment serviceability against the technical manual, not just visual inspection.",
+      "relatedTerms": ["qa-qc", "punch-list"]
+    },
+    {
+      "id": "nonconformance",
+      "category": "quality",
+      "term": "Non-Conformance Report (NCR)",
+      "definition": "A formal document identifying work that does not meet specifications, requiring a documented correction plan.",
+      "whyItMatters": "NCRs create accountability and a paper trail for how a quality issue was found, fixed, and verified.",
+      "armyAnalog": "Like a deficiency report on equipment — documented, tracked, and closed out formally, not just fixed quietly.",
+      "relatedTerms": ["qa-qc", "punch-list"]
+    },
+    {
+      "id": "cover",
+      "category": "quality",
+      "term": "Cover (Concrete Cover)",
+      "definition": "The distance between reinforcing steel and the outer surface of the concrete.",
+      "whyItMatters": "Insufficient cover leads to steel corrosion and structural failure over time — it's a precise, code-mandated measurement.",
+      "armyAnalog": "Like maintaining proper standoff distance — a specific, non-negotiable measurement for a structural reason.",
+      "relatedTerms": ["rebar"]
+    },
+    {
+      "id": "as-built",
+      "category": "documentation",
+      "term": "As-Built Drawings",
+      "definition": "Drawings updated to reflect the actual final installed conditions, which often differ slightly from the original design.",
+      "whyItMatters": "You help maintain accurate as-builts — they're critical for the Owner's future maintenance and any future renovation.",
+      "armyAnalog": "Like updating a range card after actually occupying the position — the real conditions, not just the plan.",
+      "relatedTerms": ["rfi", "submittal"]
+    },
+    {
+      "id": "gc-general-requirements",
+      "category": "scheduling",
+      "term": "General Requirements",
+      "definition": "The contract section covering project-wide items: site logistics, safety, temporary facilities, and administration.",
+      "whyItMatters": "General requirements shape day-to-day site operations — badging, parking, laydown areas, and safety protocols all live here.",
+      "armyAnalog": "Like standard operating procedures (SOPs) that govern how the whole operation runs, independent of the specific mission.",
+      "relatedTerms": ["mobilization"]
+    },
+    {
+      "id": "shop-drawing",
+      "category": "documentation",
+      "term": "Shop Drawing",
+      "definition": "Detailed fabrication drawings produced by a subcontractor or supplier showing exactly how they will build/install their scope.",
+      "whyItMatters": "You compare shop drawings to design intent and field conditions to catch conflicts before fabrication.",
+      "armyAnalog": "Like a detailed operations order annex — the specific execution plan derived from the higher-level intent.",
+      "relatedTerms": ["submittal", "rfi"]
+    },
+    {
+      "id": "layout",
+      "category": "structural",
+      "term": "Layout",
+      "definition": "The process of physically marking building elements' exact locations on site using survey equipment, based on drawings.",
+      "whyItMatters": "This is a core daily FE task — a layout error compounds through every subsequent trade that builds off it.",
+      "armyAnalog": "Like establishing grid coordinates for a range or objective — precision here prevents everything downstream from being wrong.",
+      "relatedTerms": ["plumb-and-level", "footing"],
+      "commonMistakes": ["Not verifying layout against two independent reference points", "Trusting prior layout without spot-checking"]
+    },
+    {
+      "id": "curing",
+      "category": "structural",
+      "term": "Curing",
+      "definition": "The process of maintaining moisture and temperature in concrete after pouring so it gains strength properly.",
+      "whyItMatters": "Loading or working on concrete before it's cured can cause cracking or structural weakness.",
+      "armyAnalog": "Like a mandatory stand-down period after intense exertion — skipping it causes failures later.",
+      "relatedTerms": ["concrete-pour"]
+    },
+    {
+      "id": "safety-stand-down",
+      "category": "quality",
+      "term": "Safety Stand-Down",
+      "definition": "An immediate, mandatory work stoppage to address an identified safety hazard before work resumes.",
+      "whyItMatters": "As an FE, you have the authority — and responsibility — to call a stand-down when you see an immediate hazard.",
+      "armyAnalog": "Like calling \"cease fire\" immediately when a safety violation is observed — no hesitation, no exceptions.",
+      "relatedTerms": ["qa-qc"]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "_note": "Week 2 structure is stubbed with sample rows to demonstrate the FE Responsibilities Matrix component. Add more rows as you build out full Week 2 content.",
+  "responsibilities": [
+    {
+      "id": "quality-inspection",
+      "task": "Quality Inspection",
+      "frequency": "daily",
+      "riskLevel": "high",
+      "involved": ["Superintendent", "Trade Foreman", "Architect (if needed)"],
+      "description": "Walk active work areas verifying installed work matches drawings and specifications.",
+      "commonMistakes": ["Missing defects in hard-to-access areas", "Not documenting with photos", "Re-inspecting the same area twice while missing another"]
+    },
+    {
+      "id": "rfi-tracking",
+      "task": "RFI Tracking",
+      "frequency": "daily",
+      "riskLevel": "medium",
+      "involved": ["Project Manager", "Architect", "Trade Foreman"],
+      "description": "Log open RFIs, follow up on overdue responses, and communicate answers back to the field.",
+      "commonMistakes": ["Letting RFIs go stale without follow-up", "Not distributing answers to affected trades"]
+    },
+    {
+      "id": "submittal-log",
+      "task": "Submittal Log Review",
+      "frequency": "weekly",
+      "riskLevel": "medium",
+      "involved": ["Project Manager", "Subcontractors"],
+      "description": "Confirm materials on site match approved submittals before allowing installation.",
+      "commonMistakes": ["Allowing installation before approval", "Not cross-checking revision numbers"]
+    },
+    {
+      "id": "daily-report-writing",
+      "task": "Daily Report Writing",
+      "frequency": "daily",
+      "riskLevel": "high",
+      "involved": ["Superintendent"],
+      "description": "Document manpower, weather, work performed, deliveries, and any issues encountered.",
+      "commonMistakes": ["Vague descriptions that don't hold up in a dispute", "Missing weather delays", "Writing it from memory the next day instead of same-day"]
+    },
+    {
+      "id": "layout-verification",
+      "task": "Layout Verification",
+      "frequency": "as needed",
+      "riskLevel": "high",
+      "involved": ["Surveyor", "Trade Foreman"],
+      "description": "Spot-check survey layout against drawings before trades build off control points.",
+      "commonMistakes": ["Trusting layout without independent verification", "Not checking against two reference points"]
+    },
+    {
+      "id": "punch-list-management",
+      "task": "Punch List Management",
+      "frequency": "daily",
+      "riskLevel": "medium",
+      "involved": ["Superintendent", "Trade Foreman"],
+      "description": "Identify, document, assign, and track correction items to closure — punching as you go rather than at the end.",
+      "commonMistakes": ["Letting items pile up", "Vague location/description that can't be re-found later"]
+    }
+  ]
+}

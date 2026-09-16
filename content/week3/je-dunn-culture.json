@@ -1,0 +1,14 @@
+{
+  "_note": "Week 3 structure is stubbed with core JE Dunn culture facts. Expand with additional research as you build out full Week 3 content.",
+  "companyInfo": {
+    "founded": 1924,
+    "employees": "5,001-10,000",
+    "ranking": "8th largest general contractor in the U.S.",
+    "structure": "100% employee-owned"
+  },
+  "foundingPhilosophy": "Treat people fairly, and offer quality service at a fair price.",
+  "projectTypes": ["Healthcare", "Aviation", "Corporate / commercial", "Industrial (including data centers)"],
+  "southCentralRegion": ["Dallas", "Austin", "Houston", "Oklahoma City", "El Paso (project hub)"],
+  "whatTheyValueInFEs": ["Safety awareness", "Quality obsession", "Coordination skills", "Documentation discipline"],
+  "commonInterviewThemes": ["Safety", "Quality", "Teamwork", "Integrity", "Continuous improvement"]
+}

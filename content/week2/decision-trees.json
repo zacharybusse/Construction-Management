@@ -1,0 +1,97 @@
+{
+  "_note": "Week 2 structure is stubbed with one fully-built decision tree to demonstrate the interactive flowchart component. Add more scenario trees as you build out full Week 2 content.",
+  "scenarios": [
+    {
+      "id": "defect-found",
+      "title": "Defect Found During Inspection",
+      "startNode": "defect-1",
+      "nodes": {
+        "defect-1": {
+          "question": "Is this a safety issue?",
+          "yes": {
+            "action": "STOP WORK immediately. Notify the superintendent and foreman. Document with photos.",
+            "nextNode": "defect-escalate"
+          },
+          "no": {
+            "action": "Continue assessing.",
+            "nextNode": "defect-2"
+          }
+        },
+        "defect-2": {
+          "question": "Does this affect the schedule or critical path?",
+          "yes": {
+            "action": "Escalate to the Superintendent/PM. Assess rework duration — it may impact downstream sequencing.",
+            "nextNode": "defect-doc"
+          },
+          "no": {
+            "action": "Continue assessing.",
+            "nextNode": "defect-3"
+          }
+        },
+        "defect-3": {
+          "question": "Can the trade fix it without significant rework?",
+          "yes": {
+            "action": "Request immediate correction from the foreman. Re-inspect before allowing the next phase to proceed.",
+            "nextNode": "defect-doc"
+          },
+          "no": {
+            "action": "Document as a punch list item. Coordinate timing of the fix with the Superintendent.",
+            "nextNode": "defect-doc"
+          }
+        },
+        "defect-escalate": {
+          "action": "Follow up: confirm the hazard is corrected and the area is safe before work resumes. File a safety incident report per site protocol.",
+          "nextNode": "defect-doc"
+        },
+        "defect-doc": {
+          "action": "Document: photo + exact location + description + severity + who it's assigned to for correction + target closure date.",
+          "nextNode": null
+        }
+      }
+    },
+    {
+      "id": "site-problem",
+      "title": "Something's Wrong on Site",
+      "startNode": "root-1",
+      "nodes": {
+        "root-1": {
+          "question": "Is it a safety issue?",
+          "yes": {
+            "action": "Stop work, escalate immediately, and document.",
+            "nextNode": "root-doc"
+          },
+          "no": {
+            "action": "Continue assessing.",
+            "nextNode": "root-2"
+          }
+        },
+        "root-2": {
+          "question": "Does it affect the schedule?",
+          "yes": {
+            "action": "Escalate to the Superintendent, notify the PM, and document the schedule impact.",
+            "nextNode": "root-doc"
+          },
+          "no": {
+            "action": "Continue assessing.",
+            "nextNode": "root-3"
+          }
+        },
+        "root-3": {
+          "question": "Does it affect quality or spec compliance?",
+          "yes": {
+            "action": "Document the issue, notify the Superintendent, and create a rework plan.",
+            "nextNode": "root-doc"
+          },
+          "no": {
+            "action": "Monitor, log, and report it in your daily notes.",
+            "nextNode": "root-doc"
+          }
+        },
+        "root-doc": {
+          "action": "Close the loop: confirm the issue is logged in the daily report or punch list with a clear owner and follow-up date.",
+          "nextNode": null
+        }
+      }
+    }
+  ]
+}

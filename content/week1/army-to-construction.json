@@ -1,0 +1,60 @@
+{
+  "translations": [
+    {
+      "id": "project-6",
+      "armyProject": "Project #6: NTC Readiness",
+      "armyContext": "Prepared a battalion-sized element for a National Training Center rotation — coordinating logistics, personnel readiness, equipment maintenance, and training timelines against a fixed deployment date.",
+      "constructionEquivalent": "Mobilization and site readiness planning: getting a job site, crews, equipment, and permits ready to hit a hard construction start date.",
+      "mapping": {
+        "readiness inspections": "pre-mobilization site walks and safety plan reviews",
+        "equipment maintenance cycles": "equipment/material procurement and staging",
+        "personnel certification tracking": "trade certification and site orientation tracking",
+        "fixed rotation date": "contractual project start / substantial completion date"
+      },
+      "keyInsight": "Both require driving dozens of moving parts toward a fixed, non-negotiable date with no room for slippage.",
+      "howItApplies": "You already know how to build a readiness timeline backward from a hard deadline and track every dependency that could slip it — that's exactly what a Field Engineer does when prepping a phase for inspection or turnover."
+    },
+    {
+      "id": "project-8",
+      "armyProject": "Project #8: Multi-Element Coordination",
+      "armyContext": "Synchronized multiple independent units (infantry, armor, logistics, aviation) operating on the same terrain and timeline, each with different capabilities and reporting chains.",
+      "constructionEquivalent": "Trade coordination: synchronizing concrete, MEP, structural steel, and finishes crews — each with different foremen, schedules, and material lead times — working the same building.",
+      "mapping": {
+        "unit synchronization matrix": "trade sequencing / short-interval schedule",
+        "cross-unit liaison": "field engineer as coordination point between trades",
+        "terrain deconfliction": "space/sequence deconfliction (e.g., overhead trades vs. below-slab trades)",
+        "combined arms rehearsal": "pre-installation coordination meeting"
+      },
+      "keyInsight": "Multi-element coordination is fundamentally a communication and sequencing discipline — which is exactly what trade coordination on a job site requires.",
+      "howItApplies": "You've run the kind of synchronization matrix that a Field Engineer builds informally every week: who's on site, in what sequence, and what has to finish before the next trade can start."
+    },
+    {
+      "id": "project-9",
+      "armyProject": "Project #9: Deployment Logistics",
+      "armyContext": "Managed a 9-month phased deployment cycle — personnel processing, equipment staging, logistics coordination, and documentation audits — with hard gates between each phase.",
+      "constructionEquivalent": "Multi-phase construction sequencing: foundation → structure → MEP rough-in → finishes → inspections → closeout, each phase gated by inspections and sign-offs.",
+      "mapping": {
+        "personnel processing": "site prep / permitting",
+        "equipment staging": "material procurement and delivery scheduling",
+        "logistics coordination": "trade scheduling and sequencing",
+        "documentation audit": "compliance inspections and sign-offs"
+      },
+      "keyInsight": "Both require phased, sequential planning with zero-margin compliance checkpoints — you can't move to the next phase until the current one is verified complete.",
+      "howItApplies": "You've owned the kind of phase-gate discipline a Field Engineer enforces daily: nothing moves to the next stage until it's inspected, documented, and signed off."
+    },
+    {
+      "id": "project-11",
+      "armyProject": "Project #11: Facility Risk Mitigation",
+      "armyContext": "Identified and mitigated operational risks across a facility — safety hazards, equipment failures, compliance gaps — before they became mission-impacting incidents.",
+      "constructionEquivalent": "Quality control and defect prevention: catching deviations from spec, safety hazards, and coordination conflicts before they cause rework, injury, or schedule slippage.",
+      "mapping": {
+        "risk register": "punch list / open issues log",
+        "preventive maintenance": "pre-installation quality checks",
+        "incident root-cause analysis": "defect documentation and corrective action tracking",
+        "compliance walk-throughs": "quality/safety inspections"
+      },
+      "keyInsight": "Both roles reward the same instinct: catching a small problem early is always cheaper than fixing a big one late.",
+      "howItApplies": "Your risk-mitigation mindset — constantly scanning for what could go wrong before it does — is precisely the quality-control instinct JE Dunn wants in a Field Engineer."
+    }
+  ]
+}

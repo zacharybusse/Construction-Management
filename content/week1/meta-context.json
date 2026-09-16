@@ -1,0 +1,30 @@
+{
+  "projectName": "Meta El Paso Data Center",
+  "companyContext": "JE Dunn Construction (General Contractor), Hensel Phelps (Co-GC)",
+  "scale": {
+    "investment": "$10+ billion (multi-phase build-out)",
+    "duration": "Ongoing construction through 2028",
+    "constructionJobs": "~4,000 workers on site at peak",
+    "operationalJobs": "~300 full-time roles once operational"
+  },
+  "complexity": [
+    {
+      "reason": "Hyperscale industrial facility",
+      "detail": "Not a typical commercial building — data centers require extreme precision in power, cooling, and structural tolerances."
+    },
+    {
+      "reason": "Tech client with high precision standards",
+      "detail": "Meta's internal design and construction standards are stricter than most commercial specs, with tight tolerances and rigorous QA/QC."
+    },
+    {
+      "reason": "Multi-phase mega-project",
+      "detail": "The site is built out in sequential phases with overlapping schedules, meaning coordination between phases is constant."
+    },
+    {
+      "reason": "MEP-intensive scope",
+      "detail": "Cooling, power distribution, and networking infrastructure are mission-critical systems — far more MEP-dense than a typical office or retail build."
+    }
+  ],
+  "whyThisMatters": "Your experience coordinating multi-element operations under hard deadlines and zero-margin-for-error compliance is directly relevant to the scale and precision this project demands.",
+  "southCentralRegion": "JE Dunn's South Central region covers Dallas, Austin, Houston, and Oklahoma City, with El Paso as a major current project hub."
+}

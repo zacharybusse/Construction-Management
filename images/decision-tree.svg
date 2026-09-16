@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="dtTitle dtDesc">
+  <title id="dtTitle">Field Issue Decision Tree</title>
+  <desc id="dtDesc">Flowchart: Something's wrong on site. Is it a safety issue? If yes, stop work and escalate. If no, does it affect schedule? If yes, escalate to Super/PM. If no, does it affect quality/spec compliance? If yes, document and create rework plan. If no, monitor, log, and report in daily notes.</desc>
+  <style>
+    .node { fill: #1b2a4a; stroke: #1b2a4a; rx: 8; }
+    .leaf { fill: #e8743b; stroke: #b85a2c; rx: 8; }
+    .lbl { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; fill: #fff; text-anchor: middle; }
+    .edge { stroke: #8a94a6; stroke-width: 2; fill: none; }
+    .edgelbl { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; fill: #333; font-weight: 600; }
+  </style>
+
+  <rect class="node" x="330" y="10" width="240" height="50"/>
+  <text class="lbl" x="450" y="40">Something's wrong on site</text>
+
+  <rect class="node" x="330" y="100" width="240" height="50"/>
+  <text class="lbl" x="450" y="130">Is it a safety issue?</text>
+
+  <rect class="leaf" x="620" y="100" width="240" height="60"/>
+  <text class="lbl" x="740" y="125">Stop work. Escalate</text>
+  <text class="lbl" x="740" y="143">immediately. Document.</text>
+
+  <rect class="node" x="330" y="200" width="240" height="50"/>
+  <text class="lbl" x="450" y="230">Affects the schedule?</text>
+
+  <rect class="leaf" x="620" y="200" width="240" height="60"/>
+  <text class="lbl" x="740" y="225">Escalate to Super/PM.</text>
+  <text class="lbl" x="740" y="243">Document impact.</text>
+
+  <rect class="node" x="330" y="300" width="240" height="50"/>
+  <text class="lbl" x="450" y="330">Affects quality / spec?</text>
+
+  <rect class="leaf" x="620" y="300" width="240" height="60"/>
+  <text class="lbl" x="740" y="325">Document. Notify Super.</text>
+  <text class="lbl" x="740" y="343">Create rework plan.</text>
+
+  <rect class="leaf" x="330" y="400" width="240" height="60"/>
+  <text class="lbl" x="450" y="425">Monitor, log, and</text>
+  <text class="lbl" x="450" y="443">report in daily notes.</text>
+
+  <path class="edge" d="M450,60 L450,100"/>
+  <path class="edge" d="M570,125 L620,125"/>
+  <text class="edgelbl" x="595" y="118">YES</text>
+  <path class="edge" d="M450,150 L450,200"/>
+  <text class="edgelbl" x="460" y="180">NO</text>
+
+  <path class="edge" d="M570,225 L620,225"/>
+  <text class="edgelbl" x="595" y="218">YES</text>
+  <path class="edge" d="M450,250 L450,300"/>
+  <text class="edgelbl" x="460" y="280">NO</text>
+
+  <path class="edge" d="M570,325 L620,325"/>
+  <text class="edgelbl" x="595" y="318">YES</text>
+  <path class="edge" d="M450,350 L450,400"/>
+  <text class="edgelbl" x="460" y="380">NO</text>
+</svg>

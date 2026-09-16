@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE Learning — From Infantry to Field Engineer</title>
+  <meta name="description" content="A self-paced learning site for transitioning from Army operations leadership into a Field Engineer role in commercial construction." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-nav><span class="logo-mark">▣</span> FE Learning</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="#week1" data-nav>Week 1</a>
+        <a href="#week2" data-nav>Week 2</a>
+        <a href="#week3" data-nav>Week 3</a>
+        <a href="#week4" data-nav>Week 4</a>
+        <a href="#glossary" data-nav>Glossary</a>
+        <a href="#resources" data-nav>Resources</a>
+        <button class="icon-btn" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+    <div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <h3>Progress</h3>
+      <div class="progress-summary" id="progressText">0% complete</div>
+      <ul class="week-checklist" id="weekChecklist">
+        <li data-week="week1"><span class="check-dot" aria-hidden="true"></span> Week 1: Foundations</li>
+        <li data-week="week2"><span class="check-dot" aria-hidden="true"></span> Week 2: Deep Dive</li>
+        <li data-week="week3"><span class="check-dot" aria-hidden="true"></span> Week 3: Interviews</li>
+        <li data-week="week4"><span class="check-dot" aria-hidden="true"></span> Week 4: Final Prep</li>
+      </ul>
+      <h3>Quick Links</h3>
+      <div class="sidebar-links">
+        <a href="#glossary" data-nav>Full Glossary</a>
+        <a href="#resources" data-nav>Resources</a>
+        <a href="#about" data-nav>About This Site</a>
+        <button type="button" id="resetProgressBtn">Reset Progress</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+
+      <!-- ================= HOME ================= -->
+      <section id="home" class="page active">
+        <div class="hero">
+          <h1>From Infantry to <span class="accent">Field Engineer</span> in 4 Weeks</h1>
+          <p>A self-paced learning program built to translate Army operations leadership into commercial construction field engineering — with a specific eye toward interviewing at JE Dunn Construction for the Meta El Paso data center project.</p>
+          <nav class="hero-nav" aria-label="Week navigation">
+            <a href="#week1" data-nav>Week 1: Foundations</a>
+            <a href="#week2" data-nav>Week 2: Deep Dive</a>
+            <a href="#week3" data-nav>Week 3: Interview Prep</a>
+            <a href="#week4" data-nav>Week 4: Final Prep</a>
+          </nav>
+          <a href="#week1" class="btn" data-nav>Start Week 1 →</a>
+          <div class="home-progress">
+            <div class="home-progress-track"><div class="home-progress-fill" id="homeProgressFill"></div></div>
+            <div class="home-progress-label" id="homeProgressLabel">You're 0% through the program</div>
+          </div>
+        </div>
+
+        <p class="intro-blurb">This site walks through four weeks of self-directed prep: learning the vocabulary and hierarchy of a construction site, understanding what a Field Engineer actually does day to day, and then translating your own Army project experience into language a construction hiring manager immediately understands.</p>
+
+        <div class="week-cards">
+          <a class="week-card" href="#week1" data-nav>
+            <span class="week-num">Week 1</span>
+            <h3>Foundations</h3>
+            <p>Site hierarchy, daily responsibilities, glossary, and the Army-to-Construction translator.</p>
+          </a>
+          <a class="week-card" href="#week2" data-nav>
+            <span class="week-num">Week 2</span>
+            <h3>Field Engineer Deep Dive</h3>
+            <p>Responsibilities matrix, decision trees, and a real-world scenario problem solver.</p>
+          </a>
+          <a class="week-card" href="#week3" data-nav>
+            <span class="week-num">Week 3</span>
+            <h3>Interviews + Culture</h3>
+            <p>30+ interview questions, talking points, and JE Dunn's culture and values.</p>
+          </a>
+          <a class="week-card" href="#week4" data-nav>
+            <span class="week-num">Week 4</span>
+            <h3>Final Prep &amp; Polish</h3>
+            <p>Mock interview simulator, a printable checklist, and a one-page quick reference.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= WEEK 1 ================= -->
+      <section id="week1" class="page">
+        <span class="week-badge">Week 1</span>
+        <h2>Foundations</h2>
+        <p class="intro-blurb">Learn the site hierarchy, a Field Engineer's daily rhythm, the core vocabulary, and how your Army project experience maps onto construction workflows.</p>
+
+        <div class="subsection">
+          <h3>Meta El Paso Project Snapshot</h3>
+          <div id="metaSnapshot"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.1 Site Hierarchy</h3>
+          <p style="color:var(--color-text-muted);">Click or tap any role in the chart to see its responsibilities.</p>
+          <div class="hierarchy-wrap">
+            <div class="hierarchy-svg-container" id="hierarchySvgContainer"></div>
+            <div class="hierarchy-detail" id="hierarchyDetail"></div>
+          </div>
+          <p class="placement-note">You sit here: between the office PM/Superintendent chain and the field trades.</p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.2 Daily Responsibilities</h3>
+          <p style="color:var(--color-text-muted);">Click a task to see what it involves.</p>
+          <img src="images/daily-schedule.svg" alt="Field Engineer daily timeline from 7am to 4pm" style="width:100%;height:auto;margin-bottom:1.25rem;border-radius:var(--radius);border:1px solid var(--color-border);" />
+          <div class="timeline" id="timelineContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.3 Glossary</h3>
+          <p style="color:var(--color-text-muted);">Search or filter by category. This is a preview — the full glossary lives on the <a href="#glossary" data-nav>Glossary</a> page.</p>
+          <div id="week1Glossary"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>1.4 Army-to-Construction Translator</h3>
+          <p style="color:var(--color-text-muted);">Select one of your Army projects to see its direct construction equivalent.</p>
+          <div id="translatorContainer"></div>
+        </div>
+      </section>
+
+      <!-- ================= WEEK 2 ================= -->
+      <section id="week2" class="page">
+        <span class="week-badge">Week 2</span>
+        <h2>Field Engineer Deep Dive</h2>
+        <p class="intro-blurb">The daily playbook, a decision-tree for handling site issues, and a library of real-world scenarios to practice against.</p>
+
+        <div class="subsection">
+          <h3>2.1 FE Responsibilities Matrix</h3>
+          <div class="placeholder-note">Structure ready — showing sample rows. Add the rest of the task list to <code>content/week2/fe-responsibilities.json</code> as you build out Week 2.</div>
+          <div id="matrixContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>2.2 Decision Tree: Something's Wrong on Site</h3>
+          <p style="color:var(--color-text-muted);">Answer the questions to walk through the correct escalation path.</p>
+          <div id="decisionTreeContainer"></div>
+          <img src="images/decision-tree.svg" alt="Static reference diagram of the field issue decision tree" style="width:100%;height:auto;margin-top:1.5rem;border-radius:var(--radius);border:1px solid var(--color-border);" />
+        </div>
+
+        <div class="subsection">
+          <h3>2.3 Common Site Scenarios (Problem Solver)</h3>
+          <div class="placeholder-note">Structure ready — showing sample scenarios. Add more to <code>content/week2/common-scenarios.json</code> (aim for 10-15 total) as you build out Week 2.</div>
+          <div id="scenarioSolverContainer"></div>
+        </div>
+      </section>
+
+      <!-- ================= WEEK 3 ================= -->
+      <section id="week3" class="page">
+        <span class="week-badge">Week 3</span>
+        <h2>Interview Prep + JE Dunn Context</h2>
+        <p class="intro-blurb">The interview question bank, how to frame your Army experience, and what JE Dunn actually values in a Field Engineer.</p>
+
+        <div class="subsection">
+          <h3>3.1 Interview Question Bank</h3>
+          <div class="placeholder-note">Structure ready — showing a sample set across all four categories. Expand toward the full 30+ question bank in <code>content/week3/interview-questions.json</code>.</div>
+          <div id="interviewQuestionsContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.2 Talking Points</h3>
+          <div id="talkingPointsContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>3.3 JE Dunn Culture &amp; Approach</h3>
+          <div id="cultureContainer"></div>
+        </div>
+      </section>
+
+      <!-- ================= WEEK 4 ================= -->
+      <section id="week4" class="page">
+        <span class="week-badge">Week 4</span>
+        <h2>Final Prep &amp; Polish</h2>
+        <p class="intro-blurb">Practice out loud, check off your final prep items, and keep a one-page quick reference handy.</p>
+
+        <div class="subsection">
+          <h3>4.1 Mock Interview Simulator</h3>
+          <p style="color:var(--color-text-muted);">Choose a flow, answer each question, then reveal the model answer and self-rate how you did.</p>
+          <div id="mockInterviewContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.2 Pre-Interview Checklist</h3>
+          <div id="checklistContainer"></div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.3 Quick Reference</h3>
+          <p style="color:var(--color-text-muted);">A single-page reference you can print and bring with you.</p>
+          <div id="quickRefContainer"></div>
+        </div>
+      </section>
+
+      <!-- ================= GLOSSARY ================= -->
+      <section id="glossary" class="page">
+        <h2>Full Glossary</h2>
+        <p class="intro-blurb">Every term across the program, searchable and filterable by category.</p>
+        <div class="subsection">
+          <div id="glossaryPageContainer"></div>
+        </div>
+      </section>
+
+      <!-- ================= RESOURCES ================= -->
+      <section id="resources" class="page">
+        <h2>Resources</h2>
+        <p class="intro-blurb">Printable references you can take into an interview, plus your progress tracker.</p>
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>Full Glossary</h3>
+            <p>Browse and print every term in the program.</p>
+            <a class="btn btn-secondary btn-sm" href="#glossary" data-nav>Open Glossary</a>
+          </div>
+          <div class="resource-card">
+            <h3>Army Translation Guide</h3>
+            <p>Full detail on how each Army project maps to construction workflows.</p>
+            <a class="btn btn-secondary btn-sm" href="docs/ARMY_TRANSLATION.md">Open Document</a>
+          </div>
+          <div class="resource-card">
+            <h3>Interview Guide</h3>
+            <p>The complete interview prep reference.</p>
+            <a class="btn btn-secondary btn-sm" href="docs/INTERVIEW_GUIDE.md">Open Document</a>
+          </div>
+          <div class="resource-card">
+            <h3>Quick Reference</h3>
+            <p>One-page printable summary for last-minute review.</p>
+            <a class="btn btn-secondary btn-sm" href="docs/QUICK_REFERENCE.md">Open Document</a>
+          </div>
+          <div class="resource-card">
+            <h3>Full Glossary (Markdown)</h3>
+            <p>The complete terminology reference as a standalone document.</p>
+            <a class="btn btn-secondary btn-sm" href="docs/GLOSSARY.md">Open Document</a>
+          </div>
+          <div class="resource-card">
+            <h3>Progress Tracker</h3>
+            <p>Your saved progress, stored locally in this browser.</p>
+            <div class="home-progress-track" style="margin-top:0.75rem;"><div class="home-progress-fill" id="progressFillResources" style="width:0%"></div></div>
+            <button type="button" class="btn btn-secondary btn-sm mt-1" id="resetProgressBtn2">Reset Progress</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="page">
+        <h2>About / Instructions</h2>
+        <div class="subsection">
+          <h3>How to Use This Site</h3>
+          <p>Work through Week 1 to Week 4 in order — each week builds on the last. Your progress is saved automatically in this browser (via <code>localStorage</code>), so you can close the tab and pick up where you left off.</p>
+          <ul>
+            <li>Use the sticky top navigation or the home page cards to jump between weeks.</li>
+            <li>The sidebar checklist shows which weeks you've visited.</li>
+            <li>Use the <strong>Glossary</strong> page any time you need to look up a term.</li>
+            <li>Print-friendly buttons throughout the site (glossary, checklist, quick reference) generate clean printouts via your browser's print dialog.</li>
+            <li>Toggle dark mode with the 🌙 button in the header — useful for outdoor readability.</li>
+          </ul>
+          <h3>Adding New Content</h3>
+          <p>Weeks 2-4 ship with working components and sample data. To expand them, edit the corresponding JSON files in <code>content/week2</code>, <code>content/week3</code>, and <code>content/week4</code> — no code changes required. See the <a href="README.md">README</a> in the repository root for the full data schema.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>Built for Zach Busse's transition from Army operations leadership to Field Engineer. <a href="#about" data-nav>About this site</a></p>
+  </footer>
+
+  <script src="js/glossary.js"></script>
+  <script src="js/scenarios.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
