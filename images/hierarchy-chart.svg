@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="hierarchyTitle hierarchyDesc">
+  <title id="hierarchyTitle">Construction Site Hierarchy</title>
+  <desc id="hierarchyDesc">Org chart showing Owner at top, down through Architect, General Contractor, Superintendent, Field Engineer, Trade Foreman, to Craft Workers at the bottom.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8a94a6"/>
+    </marker>
+  </defs>
+  <style>
+    .box { stroke-width: 2; rx: 8; }
+    .owner { fill: #1b2a4a; stroke: #1b2a4a; }
+    .architect { fill: #24365e; stroke: #24365e; }
+    .gc { fill: #2c4270; stroke: #2c4270; }
+    .super { fill: #3b5a8f; stroke: #3b5a8f; }
+    .fe { fill: #e8743b; stroke: #b85a2c; }
+    .foreman { fill: #5b7aa8; stroke: #5b7aa8; }
+    .workers { fill: #7c95bb; stroke: #7c95bb; }
+    .lbl { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 16px; fill: #fff; font-weight: 600; text-anchor: middle; }
+    .sub { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 11px; fill: #f0f0f0; text-anchor: middle; }
+    .line { stroke: #8a94a6; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+
+  <line class="line" x1="450" y1="70" x2="450" y2="120"/>
+  <line class="line" x1="450" y1="150" x2="450" y2="200"/>
+  <line class="line" x1="450" y1="230" x2="450" y2="280"/>
+  <line class="line" x1="450" y1="310" x2="450" y2="360"/>
+  <line class="line" x1="450" y1="390" x2="450" y2="440"/>
+  <line class="line" x1="450" y1="470" x2="450" y2="520"/>
+
+  <rect id="role-owner" class="box owner role-node" data-role="owner" x="350" y="20" width="200" height="50" tabindex="0" role="button" aria-label="Owner"/>
+  <text class="lbl" x="450" y="50" pointer-events="none">Owner (Meta)</text>
+
+  <rect id="role-architect" class="box architect role-node" data-role="architect" x="350" y="100" width="200" height="50" tabindex="0" role="button" aria-label="Architect"/>
+  <text class="lbl" x="450" y="130" pointer-events="none">Architect / EOR</text>
+
+  <rect id="role-gc" class="box gc role-node" data-role="gc" x="330" y="180" width="240" height="50" tabindex="0" role="button" aria-label="General Contractor"/>
+  <text class="lbl" x="450" y="205" pointer-events="none">General Contractor</text>
+  <text class="sub" x="450" y="221" pointer-events="none">JE Dunn Construction</text>
+
+  <rect id="role-super" class="box super role-node" data-role="super" x="330" y="260" width="240" height="50" tabindex="0" role="button" aria-label="Superintendent"/>
+  <text class="lbl" x="450" y="290" pointer-events="none">Superintendent</text>
+
+  <rect id="role-fe" class="box fe role-node" data-role="fe" x="330" y="340" width="240" height="50" tabindex="0" role="button" aria-label="Field Engineer (You)"/>
+  <text class="lbl" x="450" y="370" pointer-events="none">Field Engineer (You)</text>
+
+  <rect id="role-foreman" class="box foreman role-node" data-role="foreman" x="330" y="420" width="240" height="50" tabindex="0" role="button" aria-label="Trade Foreman"/>
+  <text class="lbl" x="450" y="450" pointer-events="none">Trade Foreman</text>
+
+  <rect id="role-workers" class="box workers role-node" data-role="workers" x="330" y="500" width="240" height="50" tabindex="0" role="button" aria-label="Craft Workers"/>
+  <text class="lbl" x="450" y="530" pointer-events="none">Craft Workers</text>
+
+  <text x="450" y="590" text-anchor="middle" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#555">
+    Field Engineer sits between the office chain (PM/Super) and the field trades.
+  </text>
+</svg>

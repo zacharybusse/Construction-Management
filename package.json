@@ -1,0 +1,11 @@
+{
+  "name": "field-engineer-learning",
+  "version": "1.0.0",
+  "description": "A self-paced learning site for transitioning from Army operations leadership into a Field Engineer role in commercial construction.",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000"
+  },
+  "author": "Zach Busse",
+  "license": "MIT"
+}

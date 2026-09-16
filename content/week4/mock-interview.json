@@ -1,0 +1,30 @@
+{
+  "_note": "Week 4 structure is stubbed with sample mock interview flows to demonstrate the Mock Interview Simulator. Add additional flows/questions as you build out full Week 4 content.",
+  "flows": [
+    {
+      "id": "typical-screening",
+      "title": "Typical FE Screening",
+      "durationMinutes": 20,
+      "description": "A general screening covering background, motivation, and basic technical fluency.",
+      "questionIds": ["q1", "q2", "q3", "q6", "q11", "q15"]
+    },
+    {
+      "id": "technical-deep-dive",
+      "title": "Technical Deep Dive",
+      "durationMinutes": 30,
+      "description": "Focused heavily on FE-specific technical knowledge and scenario judgment.",
+      "questionIds": ["q6", "q7", "q8", "q9", "q10", "q12"]
+    },
+    {
+      "id": "je-dunn-culture-fit",
+      "title": "JE Dunn Culture Fit",
+      "durationMinutes": 15,
+      "description": "Focused on JE Dunn's specific values and whether you'd thrive in their culture.",
+      "questionIds": ["q3", "q4", "q13", "q14"]
+    }
+  ],
+  "evaluationCriteria": {
+    "good": ["Specific, concrete examples", "Ties Army experience directly to FE competencies", "Stays within time limit", "Demonstrates understanding of FE responsibilities"],
+    "bad": ["Vague or generic answers", "Rambling past the time limit", "Overselling military background as superior", "No specific example given for behavioral questions"]
+  }
+}

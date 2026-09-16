@@ -1,0 +1,15 @@
+{
+  "title": "Pre-Interview Checklist",
+  "items": [
+    { "id": "c1", "text": "Research JE Dunn (company size, values, South Central region)" },
+    { "id": "c2", "text": "Research Meta El Paso (scale, timeline, complexity)" },
+    { "id": "c3", "text": "Prepare 3 stories from Army experience tied to FE competencies" },
+    { "id": "c4", "text": "Memorize 5 key FE responsibilities" },
+    { "id": "c5", "text": "Prepare 5 intelligent questions to ask the interviewer" },
+    { "id": "c6", "text": "Practice your 30-second elevator pitch" },
+    { "id": "c7", "text": "Know your 3 biggest strengths as an FE candidate" },
+    { "id": "c8", "text": "Prepare one \"weakness\" answer framed as a growth area" },
+    { "id": "c9", "text": "Print a copy of the glossary and quick reference" },
+    { "id": "c10", "text": "Dress appropriately for a construction site visit (if scheduled)" }
+  ]
+}

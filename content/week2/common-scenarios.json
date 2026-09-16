@@ -1,0 +1,61 @@
+{
+  "_note": "Week 2 structure is stubbed with sample scenarios to demonstrate the Problem Solver component. Add the remaining scenarios (aim for 10-15 total) as you build out full Week 2 content.",
+  "scenarios": [
+    {
+      "id": "scenario-rain-pour",
+      "title": "Concrete Was Poured in Rain; Quality Questionable",
+      "problem": "A concrete pour was completed yesterday afternoon during a rain event you weren't on site for. Quality is now in question.",
+      "symptoms": ["Water pooling visible on the surface in photos", "No documented water-cement ratio adjustment", "No inspection report on file for the pour"],
+      "correctActions": [
+        "Review the daily report and weather log from the pour date",
+        "Inspect the cured surface for signs of surface weakness (scaling, dusting)",
+        "Consult with the QA/QC manager or structural engineer if defects are suspected",
+        "Consider core testing if there's reasonable doubt about strength"
+      ],
+      "documentation": "Log the concern in the daily report, attach photos, and open an RFI or NCR if testing confirms an issue.",
+      "commonMistakes": ["Assuming it's fine because it \"looks okay\" on the surface", "Not checking whether the pour should have been stopped per the site's weather protocol", "Failing to loop in QA/QC before the next phase starts"]
+    },
+    {
+      "id": "scenario-late-sub",
+      "title": "Subcontractor Showing Up Late; Schedule Impact",
+      "problem": "The electrical subcontractor has shown up 2+ hours late for the past three days, threatening the rough-in schedule.",
+      "symptoms": ["Downstream trades (drywall) are starting to stack up behind schedule", "Foreman gives inconsistent explanations each day"],
+      "correctActions": [
+        "Document each late arrival with times in the daily report",
+        "Raise it with the Superintendent early — don't wait for it to become a crisis",
+        "Ask the sub's foreman directly what's causing it and whether it's a pattern",
+        "Recommend a recovery plan if the sub agrees to one (extra crew, weekend work)"
+      ],
+      "documentation": "Daily report entries with timestamps; a schedule impact note if it starts threatening a milestone.",
+      "commonMistakes": ["Letting it slide because \"it's just a couple hours\"", "Not connecting the dots between recurring lateness and schedule risk until it's a major delay"]
+    },
+    {
+      "id": "scenario-mep-defect",
+      "title": "Defect Found in Rough-In MEP Before Next Trade Starts",
+      "problem": "You find a plumbing rough-in defect (wrong pipe slope) during your pre-drywall inspection, and drywall is scheduled to start tomorrow.",
+      "symptoms": ["Pipe slope measured out of tolerance during your walk", "Drywall crew already mobilized for tomorrow"],
+      "correctActions": [
+        "Stop the drywall close-up in that area — do not let it get covered",
+        "Notify the plumbing foreman and Superintendent immediately",
+        "Get the fix scheduled and re-inspect before authorizing drywall in that specific area",
+        "Communicate the delay (if any) to the drywall foreman directly, not just through the Super"
+      ],
+      "documentation": "Photo + measurement + location + NCR if it's a spec deviation; note the corrective timeline in the daily report.",
+      "commonMistakes": ["Letting drywall proceed to \"stay on schedule\" and hoping it's caught later", "Not re-inspecting after the fix before sign-off"]
+    },
+    {
+      "id": "scenario-change-order",
+      "title": "Change Order Request From Owner; Scope/Budget Impact",
+      "problem": "The Owner's rep requests an on-the-spot layout change that isn't in the current drawings.",
+      "symptoms": ["Verbal request with no formal documentation", "Trade foreman asking if they should proceed"],
+      "correctActions": [
+        "Do not authorize field trades to proceed on verbal direction alone",
+        "Document the request in detail and route it to the PM immediately",
+        "Let the PM/Super determine if a formal change order is needed before work proceeds",
+        "Keep the trade on hold or on other work until direction is confirmed in writing"
+      ],
+      "documentation": "Written summary of the request, who made it, and the date; attach to the RFI/change order log once formalized.",
+      "commonMistakes": ["Authorizing work based on a verbal request", "Not escalating quickly enough, causing the trade to sit idle"]
+    }
+  ]
+}

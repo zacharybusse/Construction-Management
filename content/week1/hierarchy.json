@@ -1,0 +1,90 @@
+{
+  "roles": [
+    {
+      "id": "owner",
+      "title": "Owner",
+      "level": 1,
+      "description": "Pays for the project, sets standards, and approves major decisions.",
+      "responsibilities": [
+        "Define project goals, budget, and success criteria",
+        "Approve major changes and scope adjustments",
+        "Enforce quality and performance standards"
+      ],
+      "context": "Meta is the Owner on the El Paso data center project. Every decision on site ultimately traces back to meeting Meta's requirements."
+    },
+    {
+      "id": "architect",
+      "title": "Architect / Engineer of Record",
+      "level": 2,
+      "description": "Designs the building and certifies that construction matches the approved design.",
+      "responsibilities": [
+        "Produce drawings and specifications",
+        "Answer RFIs (Requests for Information)",
+        "Review and approve or reject submittals"
+      ],
+      "context": "On a hyperscale project like Meta El Paso, the design team is large and specialized — structural, MEP, civil, and low-voltage engineers all issue their own drawing sets."
+    },
+    {
+      "id": "gc",
+      "title": "General Contractor (GC)",
+      "level": 3,
+      "description": "Manages the overall construction effort, hires subcontractors, and is contractually responsible for delivering the project.",
+      "responsibilities": [
+        "Contract and coordinate all subcontractors",
+        "Own the master schedule and budget",
+        "Report progress and risk to the Owner"
+      ],
+      "context": "JE Dunn Construction is the GC (co-GC with Hensel Phelps) on Meta El Paso. This is the company you're interviewing with."
+    },
+    {
+      "id": "super",
+      "title": "Superintendent",
+      "level": 4,
+      "description": "The senior field leader responsible for day-to-day site operations, safety, and schedule.",
+      "responsibilities": [
+        "Run the daily/weekly schedule and trade sequencing",
+        "Own site safety and enforce site rules",
+        "Direct Field Engineers and resolve escalations"
+      ],
+      "context": "The Superintendent is your direct field leader — the person you escalate to and the person whose trust you're building every day."
+    },
+    {
+      "id": "fe",
+      "title": "Field Engineer (FE)",
+      "level": 5,
+      "isYou": true,
+      "description": "The eyes, ears, and documentation engine of the field team — verifying that what's being built matches the drawings and specs.",
+      "responsibilities": [
+        "Perform layout and quality inspections",
+        "Track RFIs, submittals, and punch list items",
+        "Document daily progress and coordinate between trades and the office"
+      ],
+      "context": "This is you. You sit between the office (PM, Super) and the field trades — translating design intent into verified, documented reality."
+    },
+    {
+      "id": "foreman",
+      "title": "Trade Foreman",
+      "level": 6,
+      "description": "Leads a specific crew (concrete, electrical, mechanical, etc.) and directs their daily work.",
+      "responsibilities": [
+        "Assign daily tasks to the crew",
+        "Coordinate material and equipment needs",
+        "Communicate progress and issues to the FE/Super"
+      ],
+      "context": "You will work with dozens of foremen across trades. Building trust with them is as important as your relationship with the Super."
+    },
+    {
+      "id": "workers",
+      "title": "Craft Workers",
+      "level": 7,
+      "description": "The tradespeople physically installing the work — carpenters, electricians, pipefitters, laborers, etc.",
+      "responsibilities": [
+        "Install work per drawings and specifications",
+        "Follow safety protocols",
+        "Flag issues to their foreman"
+      ],
+      "context": "Thousands of craft workers will be on site at peak for Meta El Paso. You won't direct them personally — that's the foreman's job — but your inspections affect their work daily."
+    }
+  ],
+  "reportingNote": "You sit here: between the office PM/Super chain and the field trades. Information flows up to you (from foremen) and down to you (from the Super), and you're responsible for making sure both sides have accurate, timely information."
+}

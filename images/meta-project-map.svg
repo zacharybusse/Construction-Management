@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="metaTitle metaDesc">
+  <title id="metaTitle">Meta El Paso Data Center - Project Snapshot</title>
+  <desc id="metaDesc">Visual summary of the Meta El Paso project: owner Meta, GC JE Dunn and Hensel Phelps, multi-billion dollar investment, multi-phase build through 2028, about 4000 construction jobs at peak.</desc>
+  <style>
+    .card { fill: #f4f6fa; stroke: #d7dce5; stroke-width: 1; rx: 10; }
+    .accent { fill: #e8743b; }
+    .title { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 22px; font-weight: 700; fill: #1b2a4a; }
+    .stat { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 26px; font-weight: 700; fill: #1b2a4a; text-anchor: middle; }
+    .statlbl { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; fill: #555; text-anchor: middle; }
+  </style>
+
+  <rect class="accent" x="0" y="0" width="10" height="420"/>
+  <text class="title" x="40" y="45">Meta El Paso Data Center</text>
+  <text x="40" y="70" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="14" fill="#333">Owner: Meta &#8226; GC: JE Dunn Construction (co-GC: Hensel Phelps)</text>
+
+  <rect class="card" x="40" y="100" width="190" height="110"/>
+  <text class="stat" x="135" y="155">$10B+</text>
+  <text class="statlbl" x="135" y="180">Total Investment</text>
+
+  <rect class="card" x="250" y="100" width="190" height="110"/>
+  <text class="stat" x="345" y="155">2028</text>
+  <text class="statlbl" x="345" y="180">Construction Through</text>
+
+  <rect class="card" x="460" y="100" width="190" height="110"/>
+  <text class="stat" x="555" y="155">~4,000</text>
+  <text class="statlbl" x="555" y="180">Peak Construction Jobs</text>
+
+  <rect class="card" x="670" y="100" width="190" height="110"/>
+  <text class="stat" x="765" y="155">~300</text>
+  <text class="statlbl" x="765" y="180">Full-Time Operational Jobs</text>
+
+  <text x="40" y="255" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="700" fill="#1b2a4a">Why It's Complex</text>
+  <text x="40" y="280" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#333">1. Hyperscale industrial facility, not a typical commercial build</text>
+  <text x="40" y="302" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#333">2. Tech client (Meta) with strict precision standards</text>
+  <text x="40" y="324" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#333">3. Multi-phase mega-project with overlapping dependencies</text>
+  <text x="40" y="346" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#333">4. MEP-intensive: cooling, power, and networking are mission-critical</text>
+
+  <text x="40" y="390" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-style="italic" fill="#555">South Central Region: Dallas &#8226; Austin &#8226; Houston &#8226; Oklahoma City &#8226; El Paso</text>
+</svg>

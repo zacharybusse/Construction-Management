@@ -1,0 +1,188 @@
+{
+  "_note": "Week 3 structure is stubbed with sample questions across all four categories to demonstrate the Interview Question Bank component. Expand each category toward the full 30+ question bank as you build out Week 3 content.",
+  "questions": [
+    {
+      "id": "q1",
+      "category": "opening",
+      "difficulty": "easy",
+      "question": "Tell me about yourself.",
+      "whyAsking": "They want to understand your background and why you're sitting in that chair.",
+      "sampleAnswer": "I'm Zachary Busse. I've spent 7+ years in Army operations leadership, managing 16-person teams and coordinating battalion-level facilities. I'm transitioning to construction because I've worked on projects that are fundamentally identical to field engineering — phased operations, hard deadlines, quality compliance, and zero-margin for error. I'm excited to bring that discipline and leadership to JE Dunn's field team.",
+      "redFlags": "Don't ramble; don't oversell; don't come across as \"Army is better\"; don't make it about why you're leaving the military.",
+      "timeLimit": "90-120 seconds",
+      "armyFrame": "Use your project history as proof you already understand phased project management."
+    },
+    {
+      "id": "q2",
+      "category": "opening",
+      "difficulty": "easy",
+      "question": "Why are you transitioning to construction?",
+      "whyAsking": "They want to know if this is a considered decision or a default choice.",
+      "sampleAnswer": "I looked for a field where the skills I actually built — coordinating people and timelines under hard deadlines with no room for error — would transfer directly instead of needing to be reinvented. Construction, and field engineering specifically, is that field. It's hands-on, it's measurable, and the stakes for getting it right are real.",
+      "redFlags": "Avoid vague answers like \"I just need a job\" or generic statements not tied to construction specifically.",
+      "timeLimit": "60-90 seconds"
+    },
+    {
+      "id": "q3",
+      "category": "opening",
+      "difficulty": "medium",
+      "question": "Why JE Dunn?",
+      "whyAsking": "Tests whether you've actually researched the company or are interviewing everywhere identically.",
+      "sampleAnswer": "JE Dunn's scale and the type of work — the Meta El Paso project specifically — lines up with the complexity I want to work in. A century-old, employee-owned company with a reputation for treating people fairly and investing in growth is exactly the kind of organization I want to build a long-term career with.",
+      "redFlags": "Don't give an answer that could apply to any GC — be specific to JE Dunn.",
+      "timeLimit": "60-90 seconds"
+    },
+    {
+      "id": "q4",
+      "category": "opening",
+      "difficulty": "medium",
+      "question": "What do you know about the Meta El Paso project?",
+      "whyAsking": "Tests preparation and genuine interest in the specific role, not just \"a job.\"",
+      "sampleAnswer": "It's a hyperscale data center project for Meta, one of the largest active builds in the region — multi-billion-dollar, multi-phase, with JE Dunn and Hensel Phelps as co-GC. The scale and MEP intensity of a data center means precision and coordination matter more than on a typical commercial build, which is exactly the kind of complexity my background prepared me for.",
+      "redFlags": "Don't guess at numbers you're not sure of — it's fine to be approximate but be accurate about what you do know.",
+      "timeLimit": "60-90 seconds"
+    },
+    {
+      "id": "q5",
+      "category": "opening",
+      "difficulty": "medium",
+      "question": "How does your Army background apply here?",
+      "whyAsking": "Wants a concrete, specific translation — not just \"I have leadership experience.\"",
+      "sampleAnswer": "Three ways specifically: I've run phased operations against hard deadlines with no room to slip; I've coordinated multiple independent teams working the same objective; and I've built the kind of documentation discipline that a Field Engineer's daily reports and inspections require.",
+      "redFlags": "Avoid generic \"leadership and discipline\" answers without specifics tied to FE tasks.",
+      "timeLimit": "90 seconds"
+    },
+    {
+      "id": "q6",
+      "category": "technical",
+      "difficulty": "medium",
+      "question": "Walk me through a quality inspection — what are you looking for?",
+      "whyAsking": "Do you actually understand the FE role? Can you articulate inspection rigor?",
+      "sampleAnswer": "I start with the drawings and specs. Before the day's work begins, I review what's supposed to happen — concrete placement at a given elevation, MEP rough-in in a specific chase, whatever's scheduled. During the work, I'm on-site doing zone walks: checking dimensions, plumb/level, measuring elevations, verifying materials match submittals. If I find a defect, I document it immediately with photos and location, notify the trade foreman, and create a correction plan. After the fix, I re-inspect before moving on — no massive punch list at the end, we punch as we go.",
+      "redFlags": "Don't say \"I just check if it looks right\"; don't skip documentation; don't skip re-inspection.",
+      "timeLimit": "2-3 minutes"
+    },
+    {
+      "id": "q7",
+      "category": "technical",
+      "difficulty": "medium",
+      "question": "What's the difference between an RFI and a submittal?",
+      "whyAsking": "Basic technical fluency check — do you know the vocabulary of the role?",
+      "sampleAnswer": "An RFI is a question — you're asking the design team to clarify something ambiguous or conflicting in the drawings. A submittal is documentation — product data, shop drawings, or samples — that a subcontractor provides for approval before they fabricate or install something. RFIs resolve uncertainty; submittals get approval for what's already been decided.",
+      "redFlags": "Don't confuse the two or give a vague answer that could apply to either.",
+      "timeLimit": "60-90 seconds"
+    },
+    {
+      "id": "q8",
+      "category": "technical",
+      "difficulty": "medium",
+      "question": "How would you handle a defect you find during an inspection?",
+      "whyAsking": "Tests your decision-making process, not just that you'd \"report it.\"",
+      "sampleAnswer": "First, I assess severity — is it a safety issue, does it affect schedule, is it a spec deviation? I document it immediately with photos and exact location. I notify the appropriate foreman and, depending on severity, the Superintendent. I make sure it's logged formally, whether that's a punch item or an NCR, with an assigned owner and target date. Then I follow up and re-inspect once it's corrected — I don't consider it closed until I've verified the fix myself.",
+      "redFlags": "Don't skip documentation or the follow-up/re-inspection step.",
+      "timeLimit": "2 minutes"
+    },
+    {
+      "id": "q9",
+      "category": "technical",
+      "difficulty": "hard",
+      "question": "Describe your experience with construction schedules.",
+      "whyAsking": "Direct experience is unlikely from your background — they're testing whether you understand the underlying discipline and can learn the tools.",
+      "sampleAnswer": "I haven't run a construction schedule specifically, but I've built and executed against phased operational timelines with hard gates — tracking dozens of dependencies against a fixed date with no slack for slippage. I understand the concept of critical path and float from that experience, and I'm confident I can pick up scheduling software quickly given that foundation.",
+      "redFlags": "Don't overstate direct experience you don't have — be honest and bridge to the transferable skill.",
+      "timeLimit": "90 seconds"
+    },
+    {
+      "id": "q10",
+      "category": "technical",
+      "difficulty": "medium",
+      "question": "What tools do you use to document site progress?",
+      "whyAsking": "Tests familiarity with field documentation practices, even without direct construction software experience.",
+      "sampleAnswer": "I don't have hands-on experience with construction-specific platforms like Procore yet, but I have extensive experience with structured daily reporting, photo documentation tied to specific locations, and maintaining auditable logs that hold up under later review. I'm confident I can ramp up quickly on whatever platform JE Dunn uses.",
+      "redFlags": "Don't pretend to know software you don't — be direct and pivot to the underlying discipline."
+    },
+    {
+      "id": "q11",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "question": "Tell me about a time you had to coordinate multiple teams.",
+      "whyAsking": "Looking for a concrete story demonstrating multi-element coordination skills relevant to trade coordination.",
+      "sampleAnswer": "[Use your Project #8 story: describe the situation, the multiple units/elements involved, how you synchronized them, and the outcome. Structure as Situation-Task-Action-Result.]",
+      "redFlags": "Don't stay abstract — use a specific, real example with a clear outcome.",
+      "armyFrame": "Project #8 (Multi-Element Coordination) is your strongest story for this question."
+    },
+    {
+      "id": "q12",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "question": "Describe a time you caught a mistake before it became a problem.",
+      "whyAsking": "Tests the risk-mitigation / attention-to-detail instinct a Field Engineer needs daily.",
+      "sampleAnswer": "[Use your Project #11 story: describe the risk you spotted, why it mattered, what you did about it, and what the outcome was.]",
+      "redFlags": "Don't pick an example where the outcome is unclear or where you didn't actually take action.",
+      "armyFrame": "Project #11 (Facility Risk Mitigation) is your strongest story for this question."
+    },
+    {
+      "id": "q13",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "question": "What would you do if a subcontractor was non-compliant with safety or quality standards?",
+      "whyAsking": "Tests whether you'll actually enforce standards or avoid confrontation.",
+      "sampleAnswer": "I'd address it directly and immediately — document the specific non-compliance, and if it's a safety issue, stop work on the spot. I'd loop in the foreman first to give them a chance to correct it, then escalate to the Superintendent if it continued. I don't see this as confrontational; it's part of the job, and most foremen respect someone who enforces standards consistently and fairly.",
+      "redFlags": "Don't say you'd \"let it slide\" or avoid escalating to keep the peace."
+    },
+    {
+      "id": "q14",
+      "category": "behavioral",
+      "difficulty": "medium",
+      "question": "Tell me about your experience with documentation and compliance.",
+      "whyAsking": "Documentation discipline is a core, daily FE responsibility — they want proof you take it seriously.",
+      "sampleAnswer": "[Use a specific example from your Army background involving compliance audits, readiness reporting, or equipment accountability — show the discipline of documenting accurately and consistently, not just when convenient.]",
+      "redFlags": "Don't give a generic \"I'm organized\" answer without a specific example."
+    },
+    {
+      "id": "q15",
+      "category": "your-questions",
+      "difficulty": "easy",
+      "question": "What does success look like in this FE role at JE Dunn?",
+      "whyAsking": "Shows you're thinking about performance and expectations, not just getting hired.",
+      "sampleAnswer": null,
+      "redFlags": null
+    },
+    {
+      "id": "q16",
+      "category": "your-questions",
+      "difficulty": "easy",
+      "question": "Can you describe the team I'd be working with?",
+      "whyAsking": "Shows genuine interest in the day-to-day working relationships.",
+      "sampleAnswer": null,
+      "redFlags": null
+    },
+    {
+      "id": "q17",
+      "category": "your-questions",
+      "difficulty": "easy",
+      "question": "What are the biggest challenges Field Engineers face on this project?",
+      "whyAsking": "Shows you're thinking realistically about the role, not just its upside.",
+      "sampleAnswer": null,
+      "redFlags": null
+    },
+    {
+      "id": "q18",
+      "category": "your-questions",
+      "difficulty": "easy",
+      "question": "What tools/software does JE Dunn use for project management?",
+      "whyAsking": "Practical question that shows you're already thinking about ramping up.",
+      "sampleAnswer": null,
+      "redFlags": null
+    },
+    {
+      "id": "q19",
+      "category": "your-questions",
+      "difficulty": "easy",
+      "question": "What's the typical career path from Field Engineer to Superintendent?",
+      "whyAsking": "Shows long-term intent and ambition within the company.",
+      "sampleAnswer": null,
+      "redFlags": null
+    }
+  ]
+}

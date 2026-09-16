@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-labelledby="scheduleTitle scheduleDesc">
+  <title id="scheduleTitle">Field Engineer Daily Schedule</title>
+  <desc id="scheduleDesc">Timeline from 7am to 4pm split into Morning planning, Mid-day field inspection and coordination, and Late-day documentation and reporting.</desc>
+  <style>
+    .track { fill: #eef1f6; }
+    .morning { fill: #e8743b; }
+    .midday { fill: #1b2a4a; }
+    .lateday { fill: #3b5a8f; }
+    .lbl { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 18px; fill: #fff; font-weight: 700; text-anchor: middle; }
+    .time { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 13px; fill: #333; text-anchor: middle; }
+    .desc { font-family: -apple-system, Segoe UI, Roboto, sans-serif; font-size: 12px; fill: #444; }
+  </style>
+
+  <rect class="track" x="40" y="60" width="820" height="70" rx="10"/>
+
+  <rect class="morning" x="40" y="60" width="205" height="70" rx="10"/>
+  <text class="lbl" x="142" y="102">Morning</text>
+  <text class="time" x="142" y="145">7:00 - 9:00 AM</text>
+
+  <rect class="midday" x="245" y="60" width="410" height="70"/>
+  <text class="lbl" x="450" y="102">Mid-Day</text>
+  <text class="time" x="450" y="145">9:00 AM - 3:00 PM</text>
+
+  <rect class="lateday" x="655" y="60" width="205" height="70" rx="10"/>
+  <text class="lbl" x="757" y="102">Late Day</text>
+  <text class="time" x="757" y="145">3:00 - 4:00 PM</text>
+
+  <text class="desc" x="60" y="185">- Review daily plan and drawings</text>
+  <text class="desc" x="60" y="203">- Safety huddle / toolbox talk</text>
+  <text class="desc" x="60" y="221">- Coordinate with foremen on sequence</text>
+
+  <text class="desc" x="270" y="185">- Zone walks and quality inspections</text>
+  <text class="desc" x="270" y="203">- Layout verification, MEP rough-in checks</text>
+  <text class="desc" x="270" y="221">- Trade coordination, RFI follow-up</text>
+  <text class="desc" x="270" y="239">- Respond to field issues as they arise</text>
+
+  <text class="desc" x="675" y="185">- Write daily report</text>
+  <text class="desc" x="675" y="203">- Update punch list / RFI log</text>
+  <text class="desc" x="675" y="221">- Plan next day's priorities</text>
+
+  <text x="450" y="290" text-anchor="middle" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#555">
+    A representative day — actual timing shifts with weather, deliveries, and site activity.
+  </text>
+</svg>
